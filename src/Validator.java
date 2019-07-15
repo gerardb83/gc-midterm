@@ -37,6 +37,20 @@ public class Validator {
 		return result;
 	}
 
+	public static int getPositiveIntForArray(Scanner scnr, String prompt) {
+
+		int result = -1;
+		// This approach use "hasNext" look ahead.
+		System.out.print(prompt);
+		while (!scnr.hasNextInt() && (result = scnr.nextInt()) < 0) {
+			scnr.nextLine(); // clear bad line.
+			System.out.println("Sorry, I can't read that. Enter a valid positive number.");
+			System.out.println(prompt);
+		}
+//		scnr.nextLine(); // clear for next line of input.
+		return result;
+	}
+
 	/**
 	 * Get any valid double.
 	 */

@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
@@ -14,8 +16,8 @@ public class BooksApp {
 		book.add(new Books("Three Musketeers", "Alexandre Dumas"));
 		book.add(new Books("On the Road", "Jack Keuroac"));
 		System.out.println("Welcome to the Grand Circus Bibliotheca!");
+		displayMenu();
 		do {
-			System.out.println("1. Print List\n2. Search Books by Author \n3. Search Books by Title Keyword\n4. Quit");
 			selection = Validator.getInt(scan, "Please make a selection (enter number): ", 1, 4);
 			if (selection == 1) {
 				displayBooks(book);
@@ -28,6 +30,21 @@ public class BooksApp {
 		System.out.println("Goodbye!");
 	}
 
+	private static void displayMenu() {
+
+		System.out.println("1. Print List\n2. Search Books by Author \n3. Search Books by Title Keyword\n4. Quit");
+	}
+
+	private static Date calcDueDate() {
+
+		Date dt = new Date();
+		Calendar c = Calendar.getInstance();
+		c.setTime(dt);
+		c.add(Calendar.DATE, 14);
+		dt = c.getTime();
+		return dt;
+	}
+
 	public static void displayBooks(List<Books> books) {
 
 		System.out.println("\nBibliotheca Catalog");
@@ -37,6 +54,7 @@ public class BooksApp {
 					books.get(i).getAuthor());
 		}
 		System.out.println();
+		bookCheckout(scan, books);
 	}
 
 	public static void searchAuthors(Scanner scan, List<Books> books) {
@@ -58,6 +76,30 @@ public class BooksApp {
 				System.out.printf("%-15s %-15s\n", (i + 1) + ". " + books.get(i).getTitle() + " by ",
 						books.get(i).getAuthor());
 			}
+		}
+	}
+
+	public static void bookCheckout(Scanner scan, List<Books> books) {
+
+		String[] values = { "y", "n" };
+		String answer = Validator.getStringMatching(scan, "Would you like to checckout? (y/n)", values);
+		if (answer.equalsIgnoreCase("Y")) {
+			int userInput = Validator.getInt(scan, "Please enter a number from the selection to checkout.", 1,
+					books.size());
+			userInput -= 1;
+//			System.out.println(books.get(userInput).getStatus());
+			if (books.get(userInput).getStatus().equals(Status.ONSHELF)) {
+				books.get(userInput).setStatus(Status.CHECKEDOUT);
+//				System.out.println(books.get(userInput).getStatus());
+				books.get(userInput).setDueDate(calcDueDate());
+				System.out.println("Checkout successful! " + books.get(userInput).getDueDate());
+				displayMenu();
+			} else {
+				System.out.println(
+						"Sorry, " + books.get(userInput).getTitle() + " is " + books.get(userInput).getStatus());
+			}
+		} else {
+			displayMenu();
 		}
 	}
 }
