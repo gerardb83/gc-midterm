@@ -6,7 +6,7 @@ public class Books {
 
 	private String author;
 
-	private Status status;
+	private Status status = Status.ONSHELF;
 
 	private Date dueDate;
 
@@ -30,12 +30,12 @@ public class Books {
 		this.author = author;
 	}
 
-	public String getStatus() {
+	public Status getStatus() {
 
 		return status;
 	}
 
-	public void setStatus(String status) {
+	public void setStatus(Status status) {
 
 		this.status = status;
 	}
@@ -55,14 +55,14 @@ public class Books {
 		super();
 	}
 
-	public Books(String title, String author, String status, Date dueDate) {
+	public Books(String title, String author) {
 
 		super();
 		this.title = title;
 		this.author = author;
-		this.status = status;
-		this.dueDate = dueDate;
 	}
+	
+
 
 	@Override
 	public String toString() {

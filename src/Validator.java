@@ -1,3 +1,4 @@
+import java.util.List;
 import java.util.Scanner;
 
 public class Validator {
@@ -138,6 +139,26 @@ public class Validator {
 			input = scnr.next();
 			for (int i = 0; i < validValues.length; i++) {
 				if (input.equalsIgnoreCase(validValues[i])) {
+					isValid = true;
+					break;
+				}
+			}
+			if (!isValid) {
+				System.out.println("Please enter a valid value.");
+			}
+		} while (!isValid);
+		return input;
+	}
+	
+	public static String getStringMatching(Scanner scnr, String prompt, List<Books> validValues) {
+
+		boolean isValid = false;
+		String input = "";
+		do {
+			System.out.print(prompt);
+			input = scnr.next();
+			for (int i = 0; i < validValues.size(); i++) {
+				if (input.equalsIgnoreCase(validValues.get(i).getAuthor())) {
 					isValid = true;
 					break;
 				}
