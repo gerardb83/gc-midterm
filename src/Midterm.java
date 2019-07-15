@@ -2,15 +2,11 @@ public class Midterm {
 
 	public static void main(String[] args) {
 
-<<<<<<< HEAD
 		System.out
-				.println("Once upon a time in the mystical land of Shangrila there dwelt an immortal named David and "
-						+ "his trusty band of ninja monkeys.");
-=======
-		System.out.println("Once upon a time in the mystical land of Detroit there dwelt an immortal named Kai-Yun and "
-				+ "his trusty band of ninja monkeys.");
->>>>>>> ad016b9198c723b1a1a5d3727b4ae8ff436c3909
-		System.out.println("The trusty band of ninja monkeys were called The Lin Kuei and they loved to eat potatoes.");
+				.println("Once upon a time in the mystical land of Detroit there dwelt an immortal named David and "
+						+ "his trusty band of ninja students.");
+
+		System.out.println("The trusty band of ninja students were called The Lin Kuei and they loved to eat potatoes.");
 		;
 		System.out.println("They defended their masted against the evil Tiger King, Kong Lau.");
 		System.out.println(
