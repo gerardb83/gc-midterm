@@ -149,50 +149,62 @@ public class Validator {
 		} while (!isValid);
 		return input;
 	}
-	
+
+	/*
+	 * public static String getStringMatching(Scanner scnr, String prompt,
+	 * List<Books> validValues) {
+	 * 
+	 * System.out.print(prompt); scnr.nextLine(); // clear the scanner String
+	 * tempString; String answer = ""; do { while (!scnr.hasNextLine()) {
+	 * System.out.println("This is not a valid entry."); System.out.println(prompt);
+	 * } tempString = scnr.nextLine().toLowerCase().replaceAll("\\s+", " ").trim();
+	 * for (int j = 0; j < validValues.size(); j++) { if
+	 * (tempString.equalsIgnoreCase(validValues.get(j).getAuthor())) { answer =
+	 * tempString; break; } else {
+	 * System.out.print("Sorry, we don't have books by that author: "); break; } } }
+	 * while (answer.equals("")); return answer; }
+	 */
 	public static String getStringMatching(Scanner scnr, String prompt, List<Books> validValues) {
-        System.out.print(prompt);
-        scnr.nextLine(); //clear the scanner
-        String tempString;
-        String answer = "";
-        do {
-            while (!scnr.hasNextLine()) {
-                System.out.println("This is not a valid entry.");
-                System.out.println(prompt);
-            }
-            tempString = scnr.nextLine().toLowerCase().replaceAll("\\s+", " ").trim();
-            for (int j = 0; j < validValues.size(); j++) {
-				
-            if (tempString.equalsIgnoreCase(validValues.get(j).getAuthor())) {
-                answer = tempString;
-            
-            } else {
-                System.out.print("Sorry, we don’t books by that author: ");
-            }
-            }
-        } while (answer.equals(""));
-        return answer;
-    }
-	
-//	public static String getStringMatching(Scanner scnr, String prompt, List<Books> validValues) {
-//
-//		boolean isValid = false;
-//		String input = "";
-//		do {
-//			System.out.print(prompt);
-//			input = scnr.next();
-//			for (int i = 0; i < validValues.size(); i++) {
-//				if (input.equalsIgnoreCase(validValues.get(i).getAuthor())) {
-//					isValid = true;
-//					break;
-//				}
-//			}
-//			if (!isValid) {
-//				System.out.println("Please enter a valid value.");
-//			}
-//		} while (!isValid);
-//		return input;
-//	}
+
+		boolean isValid = false;
+		String input = "";
+		do {
+			System.out.print(prompt);
+			scnr.nextLine();
+			input = scnr.nextLine();
+			for (int i = 0; i < validValues.size(); i++) {
+				if (input.equalsIgnoreCase(validValues.get(i).getAuthor())) {
+					isValid = true;
+					break;
+				}
+			}
+			if (!isValid) {
+				System.out.println("Sorry, we don't have a Book by that Author.");
+			}
+		} while (!isValid);
+		return input;
+	}
+
+	public static String getStringMatchingTitle(Scanner scnr, String prompt, List<Books> validValues) {
+
+		boolean isValid = false;
+		String input = "";
+		do {
+			System.out.print(prompt);
+			scnr.nextLine();
+			input = scnr.nextLine();
+			for (int i = 0; i < validValues.size(); i++) {
+				if (input.equalsIgnoreCase(validValues.get(i).getTitle())) {
+					isValid = true;
+					break;
+				}
+			}
+			if (!isValid) {
+				System.out.println("Sorry, we don't have a Book by that Author.");
+			}
+		} while (!isValid);
+		return input;
+	}
 
 	public static int getIntMatching(Scanner scnr, String prompt, int[] validValues) {
 
