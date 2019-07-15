@@ -8,5 +8,6 @@ public class Midterm {
 		System.out.println("The trusty band of ninja monkeys were called The Lin Kuei and they loved to eat potatoes.");
 		;
 		System.out.println("They defended their masted against the evil Tiger King, Kong Lau.");
+		System.out.println("They were famous for their loyalty, but they were famous as well for getting into trouble-- and always this trouble seemed to come from their love of potatoes.");
 	}
 }
