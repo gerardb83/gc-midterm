@@ -18,10 +18,11 @@ public class BooksApp {
 			if (selection == 1) {
 				displayBooks(book);
 			} else if (selection == 2) {
-//				searchAuthors();
+				searchAuthors(scan, book);
 			} else if (selection == 3) {
 //				searchTitles();
-			}
+			} 
+			
 		} while (selection != 4);
 		System.out.println("Goodbye!");
 	}
@@ -36,6 +37,15 @@ public class BooksApp {
 	}
 
 	public static void searchAuthors(Scanner scan, List<Books> books) {
+		String userInput = Validator.getStringMatching(scan, "Please enter the author's name.", books);
+		
+		for (int i = 0; i < books.size(); i++) {
+			if (userInput.equalsIgnoreCase(books.get(i).getAuthor())) {
+				System.out.printf("%-15s %-15s\n", (i + 1) + ". " + books.get(i).getTitle() + " by ", books.get(i).getAuthor());	
+			} else {
+				System.out.println("Book not found for " + userInput);
+			}
+	}
 		
 	}
 }
