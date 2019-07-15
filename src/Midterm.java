@@ -11,5 +11,7 @@ public class Midterm {
 		System.out.println(
 				"They were famous for their loyalty, but they were famous as well for getting into trouble-- and always this trouble seemed to come from their love of potatoes.");
 		System.out.println("The evil Tiger King came up with the idea of planting largest potato crop ever.");
+		System.out.println("Kong Lau would later conjure up a plan to invite the monkeys to his potato patch in order to capture them and sell them to a traveling circus");
 	}
+	
 }
