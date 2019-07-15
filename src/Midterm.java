@@ -14,7 +14,6 @@ public class Midterm {
 		System.out.println("The evil Tiger King came up with the idea of planting largest potato crop ever.");
 		System.out.println("Kong Lau would later conjure up a plan to invite the students to his potato patch in order to capture them and sell them to a traveling circus");
 	
-		System.out.println(
-				"Kong Lau would later conjure up a plan to invite the students to his potato patch in order to capture them and sell them to a traveling circus");
+	
 	}
 }
