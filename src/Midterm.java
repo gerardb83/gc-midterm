@@ -1,33 +1,20 @@
 public class Midterm {
 
 	public static void main(String[] args) {
+		
 
-<<<<<<< HEAD
-		System.out
-<<<<<<< HEAD
-				.println("Once upon a time in the mystical land of Shangrila there dwelt an immortal named Kai-Yun and "
+		System.out.println("Once upon a time in the mystical land of Detroit there dwelt an immortal named David and "
 						+ "his trusty band of ninja students.");
+
 		System.out.println("The trusty band of ninja students were called The Lin Kuei and they loved to eat potatoes.");
-=======
-				.println("Once upon a time in the mystical land of Shangrila there dwelt an immortal named David and "
-						+ "his trusty band of ninja monkeys.");
-=======
-		System.out.println("Once upon a time in the mystical land of Detroit there dwelt an immortal named Kai-Yun and "
-				+ "his trusty band of ninja monkeys.");
->>>>>>> ad016b9198c723b1a1a5d3727b4ae8ff436c3909
-		System.out.println("The trusty band of ninja monkeys were called The Lin Kuei and they loved to eat potatoes.");
->>>>>>> 9504a2fcc281e116596625575247b419ee24d039
 		;
 		System.out.println("They defended their masted against the evil Tiger King, Kong Lau.");
 		System.out.println(
 				"They were famous for their loyalty, but they were famous as well for getting into trouble-- and always this trouble seemed to come from their love of potatoes.");
 		System.out.println("The evil Tiger King came up with the idea of planting largest potato crop ever.");
-<<<<<<< HEAD
 		System.out.println("Kong Lau would later conjure up a plan to invite the students to his potato patch in order to capture them and sell them to a traveling circus");
 	
-=======
 		System.out.println(
-				"Kong Lau would later conjure up a plan to invite the monkeys to his potato patch in order to capture them and sell them to a traveling circus");
->>>>>>> 9504a2fcc281e116596625575247b419ee24d039
+				"Kong Lau would later conjure up a plan to invite the students to his potato patch in order to capture them and sell them to a traveling circus");
 	}
 }
