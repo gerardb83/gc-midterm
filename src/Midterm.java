@@ -7,5 +7,6 @@ public class Midterm {
 						+ "his trusty band of ninja monkeys.");
 		System.out.println("The trusty band of ninja monkeys were called The Lin Kuei and they loved to eat potatoes.");
 		;
+		System.out.println("They defended their masted against the evil Tiger King, Kong Lau.");
 	}
 }
