@@ -96,9 +96,14 @@ Darconville's Cat,Alexander Theroux,ONSHELF,null,BOOK
 The Mosquito Coast,Paul Theroux,ONSHELF,null,BOOK
 Creation,Gore Vidal,CHECKEDOUT,null,BOOK
 The Rebel Angels,Robertson Davies,ONSHELF,null,BOOK
-Ancient Evenings,Norman Mailer,ONSHELF,null,BOOK
+Ancient Evenings,Norman Mailer,CHECKEDOUT,Tue Jul 30 17:00:52 EDT 2019,BOOK
 It's a Wonderful Life (1946),null,ONSHELF,null,DVD
 Miracle on 34th Street (1947),null,ONSHELF,null,DVD
 Saving Private Ryan (1998),null,ONSHELF,null,DVD
 E.T. The Extra-Terrestrial (1982),null,ONSHELF,null,DVD
 The Bridge on the River Kwai (1957),null,ONSHELF,null,DVD
+It's a Wonderful Life (1946),ONSHELF,DVD
+Miracle on 34th Street (1947),ONSHELF,DVD
+Saving Private Ryan (1998),ONSHELF,DVD
+E.T. The Extra-Terrestrial (1982),ONSHELF,DVD
+The Bridge on the River Kwai (1957),ONSHELF,DVD

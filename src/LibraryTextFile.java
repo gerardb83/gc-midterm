@@ -66,11 +66,11 @@ public class LibraryTextFile {
 		linesHelper.rewriteFile(lines);
 	}
 
-	public static void appendToFile(List<DVD> item) throws IOException {
-
-		for (DVD each : item) {
-			String line = convertItemToLine(each);
-			linesHelper.appendToFile(line);
-		}
-	}
+//	public static void appendToFile(List<DVD> item) throws IOException {
+//
+//		for (DVD each : item) {
+//			String line = convertItemToLine(each);
+//			linesHelper.appendToFile(line);
+//		}
+//	}
 }
