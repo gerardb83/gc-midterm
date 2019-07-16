@@ -9,7 +9,7 @@ public class LibraryTextFile {
 	private static Item convertLineToItem(String line) {
 
 		String[] parts = line.split(",");
-		String tempType = parts[3].trim();
+		String tempType = parts[4].trim();
 		if (tempType.equals("BOOK")) {
 			Book books = new Book();
 			books.setTitle(parts[0]);
@@ -43,8 +43,8 @@ public class LibraryTextFile {
 	private static String convertItemToLine(Item items) {
 
 		return items.toString();
-		// String.format("%s,%s,%s,%s,%s", items.getTitle(), items.getAuthor(),
-		// items.getStatus(), items.getDueDate(), items.getType());
+//		return String.format("%s,%s,%s,%s,%s", items.getTitle(), items.getAuthor(),
+//		 items.getStatus(), items.getDueDate(), items.getType());
 	}
 
 	public static List<Item> readFile() {

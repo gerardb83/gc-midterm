@@ -1,109 +1,104 @@
-Party Going,Henry Green,ONSHELF,null
-After Many a Summer,Aldous Huxley,ONSHELF,null
-Finnegans Wake,James Joyce,ONSHELF,null
-At Swim-Two-Birds,Flann O'Brien,ONSHELF,null
-The Power and the Glory,Graham Greene,ONSHELF,null
-For Whom the Bell Tolls,Ernest Hemingway,ONSHELF,null
-Strangers and Brothers (to 1970),C. P. Snow,ONSHELF,null
-The Aerodrome,Rex Warner,ONSHELF,null
-The Horse's Mouth,Joyce Cary,ONSHELF,null
-The Razor's Edge,Somerset Maugham,ONSHELF,null
-Brideshead Revisited,Evelyn Waugh,ONSHELF,null
-Titus Groan,Mervyn Peake,ONSHELF,null
-The Victim,Saul Bellow,ONSHELF,null
-Under the Volcano,Malcolm Lowry,ONSHELF,null
-The Heart of the Matter,Graham Greene,ONSHELF,null
-Ape and Essence,Aldous Huxley,ONSHELF,null
-The Naked and the Dead,Norman Mailer,ONSHELF,null
-No Highway,Nevil Shute,ONSHELF,null
-The Heat of the Day,Elizabeth Bowen,ONSHELF,null
-Nineteen Eighty-Four,George Orwell,ONSHELF,null
-The Body,William Sansom,ONSHELF,null
-Scenes from Provincial Life,William Cooper,ONSHELF,null
-The Disenchanted,Budd Schulberg,ONSHELF,null
-A Dance to the Music of Time (to 1975),Anthony Powell,ONSHELF,null
-The Catcher in the Rye,J. D. Salinger,ONSHELF,null
-The Chronicle of Ancient Sunlight (to 1969),Henry Williamson,ONSHELF,null
-The Caine Mutiny,Herman Wouk,ONSHELF,null
-Invisible Man,Ralph Ellison,ONSHELF,null
-The Old Man and the Sea,Ernest Hemingway,ONSHELF,null
-The Groves of Academe,Mary McCarthy,ONSHELF,null
-Wise Blood,Flannery O'Connor,ONSHELF,null
-Sword of Honour (to 1961),Evelyn Waugh,ONSHELF,null
-The Long Goodbye,Raymond Chandler,ONSHELF,null
-Lucky Jim,Kingsley Amis,ONSHELF,null
-Room at the Top,John Braine,ONSHELF,null
-The Alexandria Quartet (to 1960),Lawrence Durrell,ONSHELF,null
-The London Novels (to 1960),Colin MacInnes,ONSHELF,null
-The Assistant,Bernard Malamud,ONSHELF,null
-The Bell,Iris Murdoch,ONSHELF,null
-Saturday Night and Sunday Morning,Alan Sillitoe,ONSHELF,null
-The Once and Future King,T. H. White,ONSHELF,null
-The Mansion,William Faulkner,ONSHELF,null
-Goldfinger,Ian Fleming,ONSHELF,null
-Facial Justice,L. P. Hartley,ONSHELF,null
-The Balkans Trilogy (to 1965),Olivia Manning,ONSHELF,null
-The Mighty and Their Fall,Ivy Compton-Burnett,ONSHELF,null
-Catch-22,Joseph Heller,ONSHELF,null
-The Fox in the Attic,Richard Hughes,ONSHELF,null
-Riders in the Chariot,Patrick White,ONSHELF,null
-The Old Men at the Zoo,Angus Wilson,CHECKEDOUT,Tue Jul 30 13:48:14 EDT 2019
-Another Country,James Baldwin,ONSHELF,null
-An Error of Judgment,Pamela Hansford Johnson,ONSHELF,null
-Island,Aldous Huxley,ONSHELF,null
-The Golden Notebook,Doris Lessing,ONSHELF,null
-Pale Fire,Vladimir Nabokov,ONSHELF,null
-The Girls of Slender Means,Muriel Spark,ONSHELF,null
-The Spire,William Golding,ONSHELF,null
-Heartland,Wilson Harris,ONSHELF,null
-A Single Man,Christopher Isherwood,ONSHELF,null
-The Defence,Vladimir Nabokov,ONSHELF,null
-Late Call,Angus Wilson,ONSHELF,null
-The Lockwood Concern,John O'Hara,ONSHELF,null
-The Mandelbaum Gate,Muriel Spark,ONSHELF,null
-A Man of the People,Chinua Achebe,ONSHELF,null
-The Anti-Death League,Kingsley Amis,ONSHELF,null
-Giles Goat-Boy,John Barth,ONSHELF,null
-The Late Bourgeois World,Nadine Gordimer,ONSHELF,null
-The Last Gentleman,Walker Percy,ONSHELF,null
-The Vendor of Sweets,R. K. Narayan,ONSHELF,null
-The Image Men,J. B. Priestley,ONSHELF,null
-Cocksure,Mordecai Richler,ONSHELF,null
-Pavane,Keith Roberts,ONSHELF,null
-The French Lieutenant's Woman,John Fowles,ONSHELF,null
-Portnoy's Complaint,Philip Roth,ONSHELF,null
-Bomber,Len Deighton,ONSHELF,null
-Sweet Dreams,Michael Frayn,ONSHELF,null
-Gravity's Rainbow,Thomas Pynchon,ONSHELF,null
-Humboldt's Gift,Saul Bellow,CHECKEDOUT,null
-The History Man,Malcolm Bradbury,ONSHELF,null
-The Doctor's Wife,Brian Moore,ONSHELF,null
-Falstaff,Robert Nye,ONSHELF,null
-How to Save Your Own Life,Erica Jong,ONSHELF,null
-Farewell Companions,James Plunkett,ONSHELF,null
-Staying On,Paul Scott,ONSHELF,null
-The Coup,John Updike,ONSHELF,null
-The Unlimited Dream Company,J. G. Ballard,ONSHELF,null
-Dubin's Lives,Bernard Malamud,ONSHELF,null
-A Bend in the River,V. S. Naipaul,ONSHELF,null
-Sophie's Choice,William Stryon,ONSHELF,null
-Life in the West,Brian Aldiss,CHECKEDOUT,null
-Riddley Walker,Russell Hoban,ONSHELF,null
-How Far Can You Go?,David Lodge,ONSHELF,null
-A Confederacy of Dunces,John Kennedy Toole,ONSHELF,null
-Lanark,Alasdair Gray,ONSHELF,null
-Darconville's Cat,Alexander Theroux,ONSHELF,null
-The Mosquito Coast,Paul Theroux,ONSHELF,null
-Creation,Gore Vidal,CHECKEDOUT,null
-The Rebel Angels,Robertson Davies,ONSHELF,null
-Ancient Evenings,Norman Mailer,ONSHELF,null
+Party Going,Henry Green,ONSHELF,null,BOOK
+After Many a Summer,Aldous Huxley,ONSHELF,null,BOOK
+Finnegans Wake,James Joyce,ONSHELF,null,BOOK
+At Swim-Two-Birds,Flann O'Brien,ONSHELF,null,BOOK
+The Power and the Glory,Graham Greene,ONSHELF,null,BOOK
+For Whom the Bell Tolls,Ernest Hemingway,ONSHELF,null,BOOK
+Strangers and Brothers (to 1970),C. P. Snow,ONSHELF,null,BOOK
+The Aerodrome,Rex Warner,ONSHELF,null,BOOK
+The Horse's Mouth,Joyce Cary,ONSHELF,null,BOOK
+The Razor's Edge,Somerset Maugham,ONSHELF,null,BOOK
+Brideshead Revisited,Evelyn Waugh,ONSHELF,null,BOOK
+Titus Groan,Mervyn Peake,ONSHELF,null,BOOK
+The Victim,Saul Bellow,ONSHELF,null,BOOK
+Under the Volcano,Malcolm Lowry,ONSHELF,null,BOOK
+The Heart of the Matter,Graham Greene,ONSHELF,null,BOOK
+Ape and Essence,Aldous Huxley,ONSHELF,null,BOOK
+The Naked and the Dead,Norman Mailer,ONSHELF,null,BOOK
+No Highway,Nevil Shute,ONSHELF,null,BOOK
+The Heat of the Day,Elizabeth Bowen,ONSHELF,null,BOOK
+Nineteen Eighty-Four,George Orwell,ONSHELF,null,BOOK
+The Body,William Sansom,ONSHELF,null,BOOK
+Scenes from Provincial Life,William Cooper,ONSHELF,null,BOOK
+The Disenchanted,Budd Schulberg,ONSHELF,null,BOOK
+A Dance to the Music of Time (to 1975),Anthony Powell,ONSHELF,null,BOOK
+The Catcher in the Rye,J. D. Salinger,ONSHELF,null,BOOK
+The Chronicle of Ancient Sunlight (to 1969),Henry Williamson,ONSHELF,null,BOOK
+The Caine Mutiny,Herman Wouk,ONSHELF,null,BOOK
+Invisible Man,Ralph Ellison,ONSHELF,null,BOOK
+The Old Man and the Sea,Ernest Hemingway,ONSHELF,null,BOOK
+The Groves of Academe,Mary McCarthy,ONSHELF,null,BOOK
+Wise Blood,Flannery O'Connor,ONSHELF,null,BOOK
+Sword of Honour (to 1961),Evelyn Waugh,ONSHELF,null,BOOK
+The Long Goodbye,Raymond Chandler,ONSHELF,null,BOOK
+Lucky Jim,Kingsley Amis,ONSHELF,null,BOOK
+Room at the Top,John Braine,ONSHELF,null,BOOK
+The Alexandria Quartet (to 1960),Lawrence Durrell,ONSHELF,null,BOOK
+The London Novels (to 1960),Colin MacInnes,ONSHELF,null,BOOK
+The Assistant,Bernard Malamud,ONSHELF,null,BOOK
+The Bell,Iris Murdoch,ONSHELF,null,BOOK
+Saturday Night and Sunday Morning,Alan Sillitoe,ONSHELF,null,BOOK
+The Once and Future King,T. H. White,ONSHELF,null,BOOK
+The Mansion,William Faulkner,ONSHELF,null,BOOK
+Goldfinger,Ian Fleming,ONSHELF,null,BOOK
+Facial Justice,L. P. Hartley,ONSHELF,null,BOOK
+The Balkans Trilogy (to 1965),Olivia Manning,ONSHELF,null,BOOK
+The Mighty and Their Fall,Ivy Compton-Burnett,ONSHELF,null,BOOK
+Catch-22,Joseph Heller,ONSHELF,null,BOOK
+The Fox in the Attic,Richard Hughes,ONSHELF,null,BOOK
+Riders in the Chariot,Patrick White,ONSHELF,null,BOOK
+The Old Men at the Zoo,Angus Wilson,CHECKEDOUT,null,BOOK
+Another Country,James Baldwin,ONSHELF,null,BOOK
+An Error of Judgment,Pamela Hansford Johnson,ONSHELF,null,BOOK
+Island,Aldous Huxley,ONSHELF,null,BOOK
+The Golden Notebook,Doris Lessing,ONSHELF,null,BOOK
+Pale Fire,Vladimir Nabokov,ONSHELF,null,BOOK
+The Girls of Slender Means,Muriel Spark,ONSHELF,null,BOOK
+The Spire,William Golding,ONSHELF,null,BOOK
+Heartland,Wilson Harris,ONSHELF,null,BOOK
+A Single Man,Christopher Isherwood,ONSHELF,null,BOOK
+The Defence,Vladimir Nabokov,ONSHELF,null,BOOK
+Late Call,Angus Wilson,ONSHELF,null,BOOK
+The Lockwood Concern,John O'Hara,ONSHELF,null,BOOK
+The Mandelbaum Gate,Muriel Spark,ONSHELF,null,BOOK
+A Man of the People,Chinua Achebe,ONSHELF,null,BOOK
+The Anti-Death League,Kingsley Amis,ONSHELF,null,BOOK
+Giles Goat-Boy,John Barth,ONSHELF,null,BOOK
+The Late Bourgeois World,Nadine Gordimer,ONSHELF,null,BOOK
+The Last Gentleman,Walker Percy,ONSHELF,null,BOOK
+The Vendor of Sweets,R. K. Narayan,ONSHELF,null,BOOK
+The Image Men,J. B. Priestley,ONSHELF,null,BOOK
+Cocksure,Mordecai Richler,ONSHELF,null,BOOK
+Pavane,Keith Roberts,ONSHELF,null,BOOK
+The French Lieutenant's Woman,John Fowles,ONSHELF,null,BOOK
+Portnoy's Complaint,Philip Roth,ONSHELF,null,BOOK
+Bomber,Len Deighton,ONSHELF,null,BOOK
+Sweet Dreams,Michael Frayn,ONSHELF,null,BOOK
+Gravity's Rainbow,Thomas Pynchon,ONSHELF,null,BOOK
+Humboldt's Gift,Saul Bellow,CHECKEDOUT,null,BOOK
+The History Man,Malcolm Bradbury,ONSHELF,null,BOOK
+The Doctor's Wife,Brian Moore,ONSHELF,null,BOOK
+Falstaff,Robert Nye,ONSHELF,null,BOOK
+How to Save Your Own Life,Erica Jong,ONSHELF,null,BOOK
+Farewell Companions,James Plunkett,ONSHELF,null,BOOK
+Staying On,Paul Scott,ONSHELF,null,BOOK
+The Coup,John Updike,ONSHELF,null,BOOK
+The Unlimited Dream Company,J. G. Ballard,ONSHELF,null,BOOK
+Dubin's Lives,Bernard Malamud,ONSHELF,null,BOOK
+A Bend in the River,V. S. Naipaul,ONSHELF,null,BOOK
+Sophie's Choice,William Stryon,ONSHELF,null,BOOK
+Life in the West,Brian Aldiss,CHECKEDOUT,null,BOOK
+Riddley Walker,Russell Hoban,ONSHELF,null,BOOK
+How Far Can You Go?,David Lodge,ONSHELF,null,BOOK
+A Confederacy of Dunces,John Kennedy Toole,ONSHELF,null,BOOK
+Lanark,Alasdair Gray,ONSHELF,null,BOOK
+Darconville's Cat,Alexander Theroux,ONSHELF,null,BOOK
+The Mosquito Coast,Paul Theroux,ONSHELF,null,BOOK
+Creation,Gore Vidal,CHECKEDOUT,null,BOOK
+The Rebel Angels,Robertson Davies,ONSHELF,null,BOOK
+Ancient Evenings,Norman Mailer,ONSHELF,null,BOOK
 It's a Wonderful Life (1946),null,ONSHELF,null,DVD
 Miracle on 34th Street (1947),null,ONSHELF,null,DVD
 Saving Private Ryan (1998),null,ONSHELF,null,DVD
 E.T. The Extra-Terrestrial (1982),null,ONSHELF,null,DVD
 The Bridge on the River Kwai (1957),null,ONSHELF,null,DVD
-It's a Wonderful Life (1946),ONSHELF,DVD
-Miracle on 34th Street (1947),ONSHELF,DVD
-Saving Private Ryan (1998),ONSHELF,DVD
-E.T. The Extra-Terrestrial (1982),ONSHELF,DVD
-The Bridge on the River Kwai (1957),ONSHELF,DVD

@@ -71,7 +71,7 @@ public class DVD extends Item {
 	@Override
 	public String toString() {
 
-		return String.format("%s,%s,%s,%s", getTitle(), getAuthor(), getStatus(), getType());
+		return String.format("%s,%s,%s,%s,%s", getTitle(), getAuthor(), getStatus(), getDueDate(), getType());
 	}
 
 	@Override

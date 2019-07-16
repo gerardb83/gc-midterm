@@ -19,52 +19,54 @@ public class BooksApp {
 			Files.createFile(path);
 		}
 		
-		List<DVD> dvds = new ArrayList<>();
-		
-		dvds.add(new DVD ("It's a Wonderful Life (1946)"));
-		dvds.add(new DVD ("Miracle on 34th Street (1947)"));
-		dvds.add(new DVD ("Saving Private Ryan (1998)"));
-		dvds.add(new DVD ("E.T. The Extra-Terrestrial (1982)"));
-		dvds.add(new DVD ("The Bridge on the River Kwai (1957)"));
-
-
-		LibraryTextFile.appendToFile(dvds);
-		
 		int selection = 0;
-		List<Item> books = LibraryTextFile.readFile();
-		LibraryTextFile.rewriteFile(books);
+		List<Item> items = LibraryTextFile.readFile();
+//		LibraryTextFile.rewriteFile(items);
 		displayMenu();
 		do {
+			
 			selection = Validator.getInt(scan, "Please make a selection (enter number): ", 1, 4);
 			if (selection == 1) {
-				displayBooks(books);
+				displayItems(getBooks(items));
 			} else if (selection == 2) {
-				searchAuthors(scan, books);
+				displayItems(getDVDS(items)); 		
 			} else if (selection == 3) {
-				searchTitles(scan, books);
+				searchAuthors(scan, items);
+			} else if (selection == 4) {
+				searchTitles(scan, items);
 			}
-		} while (selection != 4);
+		} while (selection != 5);
 		System.out.println("Goodbye!");
 	}
 
 	private static void displayMenu() {
 
-		System.out.println("1. Print List\n2. Search Books by Author \n3. Search Books by Title Keyword\n4. Quit");
+		System.out.println("1. Print Book List\n2. Print DVD List\n3.Search Books by Author \n4. Search Books by Title Keyword\n5. Quit");
 	}
 
-	public static void displayBooks(List<Item> books) throws Exception {
+	public static void displayItems(List<Item> items) throws Exception {
 
 		System.out.println("\nBibliotheca Catalog");
 		System.out.println("================================================================\n");
+		if(items.get(0).getType() == Type.BOOK) {
+		
 		System.out.printf("%-50s %-50s\n", "Title", "Author");
 		System.out.println("------------------------------------------------------------------");
 		int i = 1;
-		for (Item b : books) {
+		for (Item b : items) {
 			System.out.printf("%-1s %-45s %-45s\n", df.format(i) + ".", b.getTitle(), b.getAuthor());
 			i++;
+		}} else if (items.get(0).getType() == Type.DVD) {
+			System.out.printf("%-50s\n", "Title");
+			System.out.println("------------------------------------------------------------------");
+			int i = 1;
+			for (Item b : items) {
+				System.out.printf("%-1s %-45s\n", df.format(i) + ".", b.getTitle());
+				i++;
+			}
 		}
 		System.out.println();
-		checkout(scan, books);
+		checkout(scan, items);
 	}
 
 	public static void searchAuthors(Scanner scan, List<Item> books) throws Exception {
@@ -121,6 +123,27 @@ public class BooksApp {
 		}
 	}
 
+	public static List<Item> getBooks(List<Item> items) {
+		List<Item> books = new ArrayList<>();
+		for (Item each : items) {
+			if(each.getType() == Type.BOOK) {
+				books.add(each);
+			}
+		}
+		return books;	
+	}
+	
+	public static List<Item> getDVDS(List<Item> items) {
+		List<Item> dvds = new ArrayList<>();
+		for (Item each : items) {
+			if(each.getType() == Type.DVD) {
+				dvds.add(each);
+			}
+		}
+		return dvds;	
+	}
+
+	
 	public static void displayBanner() {
 
 	}
