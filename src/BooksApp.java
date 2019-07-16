@@ -1,3 +1,8 @@
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -7,15 +12,23 @@ import java.util.Scanner;
 public class BooksApp {
 
 	static Scanner scan = new Scanner(System.in);
+	public static DecimalFormat df = new DecimalFormat("00");
+	
+	public static void main(String[] args) throws IOException {
 
-	public static void main(String[] args) {
-
+		Path path = Paths.get("items.txt");
+	    if (Files.notExists(path)) {
+	        Files.createFile(path);
+	    }
+	        
 		int selection = 0;
-		List<Book> books = new ArrayList<>();
-		books.add(new Book("The Alchemist", "Paulo Coelho"));
-		books.add(new Book("Three Musketeers", "Alexandre Dumas"));
-		books.add(new Book("On the Road", "Jack Keuroac"));
-		System.out.println("Welcome to the Grand Circus Bibliotheca!");
+		List<Book> books = LibraryTextFile.readFile();
+	
+//		List<Book> books = new ArrayList<>();
+//		books.add(new Book("The Alchemist", "Paulo Coelho"));
+//		books.add(new Book("Three Musketeers", "Alexandre Dumas"));
+//		books.add(new Book("On the Road", "Jack Keuroac"));
+//		System.out.println("Welcome to the Grand Circus Bibliotheca!");
 		displayMenu();
 		do {
 			selection = Validator.getInt(scan, "Please make a selection (enter number): ", 1, 4);
@@ -46,13 +59,15 @@ public class BooksApp {
 	}
 
 	public static void displayBooks(List<Book> books) {
-
 		System.out.println("\nBibliotheca Catalog");
-		System.out.println("===================================================\n");
-		for (int i = 0; i < books.size(); i++) {
-			System.out.printf("%-15s %-15s\n", (i + 1) + ". " + books.get(i).getTitle() + " by ",
-					books.get(i).getAuthor());
-		}
+		System.out.println("================================================================\n");
+		System.out.printf("%-50s %-50s\n", "Title", "Author");
+		System.out.println("------------------------------------------------------------------");
+		int i = 1;
+        for (Book b : books) {
+            System.out.printf("%-1s %-45s %-45s\n", df.format(i) + ".", b.getTitle(), b.getAuthor());
+            i++;
+        }
 		System.out.println();
 		bookCheckout(scan, books);
 	}
@@ -97,6 +112,7 @@ public class BooksApp {
 				selectedBook.setStatus(Status.CHECKEDOUT);
 //				System.out.println(books.get(userInput).getStatus());
 				selectedBook.setDueDate(calcDueDate());
+				System.out.println(selectedBook.getTitle());
 				System.out.println("Checkout successful! " + selectedBook.getDueDate());
 				displayMenu();
 			} else {
