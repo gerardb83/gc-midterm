@@ -1,13 +1,11 @@
 import java.util.Calendar;
 import java.util.Date;
 
-public class Book extends Item {
+public class DVD extends Item {
 
 	private String title;
 
 	private String author;
-
-	private Status status = Status.ONSHELF;
 
 	private Date dueDate;
 
@@ -35,46 +33,20 @@ public class Book extends Item {
 		this.author = author;
 	}
 
-	public Status getStatus() {
-
-		super.getStatus();
-		return status;
-	}
-
-	public void setStatus(Status status) {
-
-		super.setStatus(status);
-		this.status = status;
-	}
-
 	public Date getDueDate() {
 
-		super.getDueDate();
 		return dueDate;
 	}
 
 	public void setDueDate(Date dueDate) {
 
-		super.setDueDate(dueDate);
 		this.dueDate = dueDate;
-	}
-
-	public Book() {
-
-		super();
-	}
-
-	public Book(String title, String author) {
-
-		super();
-		this.title = title;
-		this.author = author;
 	}
 
 	@Override
 	public String toString() {
 
-		return "Books [title=" + title + ", author=" + author + ", status=" + status + ", dueDate=" + dueDate + "]";
+		return "DVD [title=" + title + ", author=" + author + ", dueDate=" + dueDate + "]";
 	}
 
 	@Override
@@ -83,7 +55,7 @@ public class Book extends Item {
 		Date dt = new Date();
 		Calendar c = Calendar.getInstance();
 		c.setTime(dt);
-		c.add(Calendar.DATE, 14);
+		c.add(Calendar.DATE, 3);
 		dt = c.getTime();
 		return dt;
 	}
