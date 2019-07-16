@@ -1,3 +1,3 @@
 public enum Status {
-	ONSHELF, CHECKEDOUT, MISSING;
+	ONSHELF, CHECKEDOUT, HOLD;
 }

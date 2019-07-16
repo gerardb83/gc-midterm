@@ -11,6 +11,14 @@ public class LibraryTextFile {
 		Book books  = new Book();
 		books.setTitle(parts[0]);
 		books.setAuthor(parts[1].trim());
+		String tempStatus = parts[2].trim();
+		if(tempStatus.equals("ONSHELF")) {
+			books.setStatus(Status.ONSHELF);
+		} else if (tempStatus.equals("CHECKEDOUT")) {
+				books.setStatus(Status.CHECKEDOUT);
+		} else if (tempStatus.equals("HOLD")) {
+				books.setStatus(Status.HOLD);
+		}
 		return books;
 	}
 
