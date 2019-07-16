@@ -12,18 +12,18 @@ public class LibraryTextFile {
 		String tempType = parts[3].trim();
 		if (tempType.equals("BOOK")) {
 			Book books = new Book();
-		books.setTitle(parts[0]);
-		books.setAuthor(parts[1].trim());
-		String tempStatus = parts[2].trim();
-		if (tempStatus.equals("ONSHELF")) {
-			books.setStatus(Status.ONSHELF);
-		} else if (tempStatus.equals("CHECKEDOUT")) {
-			books.setStatus(Status.CHECKEDOUT);
-		} else if (tempStatus.equals("HOLD")) {
-			books.setStatus(Status.HOLD);
-		}
-		return books;
-		} else if (tempType.equals("DVD")){
+			books.setTitle(parts[0]);
+			books.setAuthor(parts[1].trim());
+			String tempStatus = parts[2].trim();
+			if (tempStatus.equals("ONSHELF")) {
+				books.setStatus(Status.ONSHELF);
+			} else if (tempStatus.equals("CHECKEDOUT")) {
+				books.setStatus(Status.CHECKEDOUT);
+			} else if (tempStatus.equals("HOLD")) {
+				books.setStatus(Status.HOLD);
+			}
+			return books;
+		} else if (tempType.equals("DVD")) {
 			DVD dvds = new DVD();
 			dvds.setTitle(parts[0]);
 			dvds.setAuthor(null);
@@ -35,14 +35,16 @@ public class LibraryTextFile {
 			} else if (tempStatus.equals("HOLD")) {
 				dvds.setStatus(Status.HOLD);
 			}
-		return dvds;
+			return dvds;
 		}
 		return null;
-		}
+	}
 
 	private static String convertItemToLine(Item items) {
 
-		return String.format("%s,%s,%s,%s,%s", items.getTitle(), items.getAuthor(), items.getStatus(), items.getDueDate(), items.getType());
+		return items.toString();
+		// String.format("%s,%s,%s,%s,%s", items.getTitle(), items.getAuthor(),
+		// items.getStatus(), items.getDueDate(), items.getType());
 	}
 
 	public static List<Item> readFile() {
@@ -63,10 +65,12 @@ public class LibraryTextFile {
 		}
 		linesHelper.rewriteFile(lines);
 	}
+
 	public static void appendToFile(List<DVD> item) throws IOException {
+
 		for (DVD each : item) {
-		String line = convertItemToLine(each);
-		linesHelper.appendToFile(line);
+			String line = convertItemToLine(each);
+			linesHelper.appendToFile(line);
 		}
 	}
 }

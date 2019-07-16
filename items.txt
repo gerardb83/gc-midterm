@@ -1,119 +1,109 @@
-Party Going,null,ONSHELF,null,DVD
-After Many a Summer,null,ONSHELF,null,DVD
-Finnegans Wake,null,ONSHELF,null,DVD
-At Swim-Two-Birds,null,ONSHELF,null,DVD
-The Power and the Glory,null,ONSHELF,null,DVD
-For Whom the Bell Tolls,null,ONSHELF,null,DVD
-Strangers and Brothers (to 1970),null,ONSHELF,null,DVD
-The Aerodrome,null,ONSHELF,null,DVD
-The Horse's Mouth,null,ONSHELF,null,DVD
-The Razor's Edge,null,ONSHELF,null,DVD
-Brideshead Revisited,null,ONSHELF,null,DVD
-Titus Groan,null,ONSHELF,null,DVD
-The Victim,null,ONSHELF,null,DVD
-Under the Volcano,null,ONSHELF,null,DVD
-The Heart of the Matter,null,ONSHELF,null,DVD
-Ape and Essence,null,ONSHELF,null,DVD
-The Naked and the Dead,null,ONSHELF,null,DVD
-No Highway,null,ONSHELF,null,DVD
-The Heat of the Day,null,ONSHELF,null,DVD
-Nineteen Eighty-Four,null,ONSHELF,null,DVD
-The Body,null,ONSHELF,null,DVD
-Scenes from Provincial Life,null,ONSHELF,null,DVD
-The Disenchanted,null,ONSHELF,null,DVD
-A Dance to the Music of Time (to 1975),null,ONSHELF,null,DVD
-The Catcher in the Rye,null,ONSHELF,null,DVD
-The Chronicle of Ancient Sunlight (to 1969),null,ONSHELF,null,DVD
-The Caine Mutiny,null,ONSHELF,null,DVD
-Invisible Man,null,ONSHELF,null,DVD
-The Old Man and the Sea,null,ONSHELF,null,DVD
-The Groves of Academe,null,ONSHELF,null,DVD
-Wise Blood,null,ONSHELF,null,DVD
-Sword of Honour (to 1961),null,ONSHELF,null,DVD
-The Long Goodbye,null,ONSHELF,null,DVD
-Lucky Jim,null,ONSHELF,null,DVD
-Room at the Top,null,ONSHELF,null,DVD
-The Alexandria Quartet (to 1960),null,ONSHELF,null,DVD
-The London Novels (to 1960),null,ONSHELF,null,DVD
-The Assistant,null,ONSHELF,null,DVD
-The Bell,null,ONSHELF,null,DVD
-Saturday Night and Sunday Morning,null,ONSHELF,null,DVD
-The Once and Future King,null,ONSHELF,null,DVD
-The Mansion,null,ONSHELF,null,DVD
-Goldfinger,null,ONSHELF,null,DVD
-Facial Justice,null,ONSHELF,null,DVD
-The Balkans Trilogy (to 1965),null,ONSHELF,null,DVD
-The Mighty and Their Fall,null,ONSHELF,null,DVD
-Catch-22,null,ONSHELF,null,DVD
-The Fox in the Attic,null,ONSHELF,null,DVD
-Riders in the Chariot,null,ONSHELF,null,DVD
-The Old Men at the Zoo,null,CHECKEDOUT,null,DVD
-Another Country,null,ONSHELF,null,DVD
-An Error of Judgment,null,ONSHELF,null,DVD
-Island,null,ONSHELF,null,DVD
-The Golden Notebook,null,ONSHELF,null,DVD
-Pale Fire,null,ONSHELF,null,DVD
-The Girls of Slender Means,null,ONSHELF,null,DVD
-The Spire,null,ONSHELF,null,DVD
-Heartland,null,ONSHELF,null,DVD
-A Single Man,null,ONSHELF,null,DVD
-The Defence,null,ONSHELF,null,DVD
-Late Call,null,ONSHELF,null,DVD
-The Lockwood Concern,null,ONSHELF,null,DVD
-The Mandelbaum Gate,null,ONSHELF,null,DVD
-A Man of the People,null,ONSHELF,null,DVD
-The Anti-Death League,null,ONSHELF,null,DVD
-Giles Goat-Boy,null,ONSHELF,null,DVD
-The Late Bourgeois World,null,ONSHELF,null,DVD
-The Last Gentleman,null,ONSHELF,null,DVD
-The Vendor of Sweets,null,ONSHELF,null,DVD
-The Image Men,null,ONSHELF,null,DVD
-Cocksure,null,ONSHELF,null,DVD
-Pavane,null,ONSHELF,null,DVD
-The French Lieutenant's Woman,null,ONSHELF,null,DVD
-Portnoy's Complaint,null,ONSHELF,null,DVD
-Bomber,null,ONSHELF,null,DVD
-Sweet Dreams,null,ONSHELF,null,DVD
-Gravity's Rainbow,null,ONSHELF,null,DVD
-Humboldt's Gift,null,CHECKEDOUT,null,DVD
-The History Man,null,ONSHELF,null,DVD
-The Doctor's Wife,null,ONSHELF,null,DVD
-Falstaff,null,ONSHELF,null,DVD
-How to Save Your Own Life,null,ONSHELF,null,DVD
-Farewell Companions,null,ONSHELF,null,DVD
-Staying On,null,ONSHELF,null,DVD
-The Coup,null,ONSHELF,null,DVD
-The Unlimited Dream Company,null,ONSHELF,null,DVD
-Dubin's Lives,null,ONSHELF,null,DVD
-A Bend in the River,null,ONSHELF,null,DVD
-Sophie's Choice,null,ONSHELF,null,DVD
-Life in the West,null,CHECKEDOUT,null,DVD
-Riddley Walker,null,ONSHELF,null,DVD
-How Far Can You Go?,null,ONSHELF,null,DVD
-A Confederacy of Dunces,null,ONSHELF,null,DVD
-Lanark,null,ONSHELF,null,DVD
-Darconville's Cat,null,ONSHELF,null,DVD
-The Mosquito Coast,null,ONSHELF,null,DVD
-Creation,null,CHECKEDOUT,null,DVD
-The Rebel Angels,null,ONSHELF,null,DVD
-Ancient Evenings,null,ONSHELF,null,DVD
+Party Going,Henry Green,ONSHELF,null
+After Many a Summer,Aldous Huxley,ONSHELF,null
+Finnegans Wake,James Joyce,ONSHELF,null
+At Swim-Two-Birds,Flann O'Brien,ONSHELF,null
+The Power and the Glory,Graham Greene,ONSHELF,null
+For Whom the Bell Tolls,Ernest Hemingway,ONSHELF,null
+Strangers and Brothers (to 1970),C. P. Snow,ONSHELF,null
+The Aerodrome,Rex Warner,ONSHELF,null
+The Horse's Mouth,Joyce Cary,ONSHELF,null
+The Razor's Edge,Somerset Maugham,ONSHELF,null
+Brideshead Revisited,Evelyn Waugh,ONSHELF,null
+Titus Groan,Mervyn Peake,ONSHELF,null
+The Victim,Saul Bellow,ONSHELF,null
+Under the Volcano,Malcolm Lowry,ONSHELF,null
+The Heart of the Matter,Graham Greene,ONSHELF,null
+Ape and Essence,Aldous Huxley,ONSHELF,null
+The Naked and the Dead,Norman Mailer,ONSHELF,null
+No Highway,Nevil Shute,ONSHELF,null
+The Heat of the Day,Elizabeth Bowen,ONSHELF,null
+Nineteen Eighty-Four,George Orwell,ONSHELF,null
+The Body,William Sansom,ONSHELF,null
+Scenes from Provincial Life,William Cooper,ONSHELF,null
+The Disenchanted,Budd Schulberg,ONSHELF,null
+A Dance to the Music of Time (to 1975),Anthony Powell,ONSHELF,null
+The Catcher in the Rye,J. D. Salinger,ONSHELF,null
+The Chronicle of Ancient Sunlight (to 1969),Henry Williamson,ONSHELF,null
+The Caine Mutiny,Herman Wouk,ONSHELF,null
+Invisible Man,Ralph Ellison,ONSHELF,null
+The Old Man and the Sea,Ernest Hemingway,ONSHELF,null
+The Groves of Academe,Mary McCarthy,ONSHELF,null
+Wise Blood,Flannery O'Connor,ONSHELF,null
+Sword of Honour (to 1961),Evelyn Waugh,ONSHELF,null
+The Long Goodbye,Raymond Chandler,ONSHELF,null
+Lucky Jim,Kingsley Amis,ONSHELF,null
+Room at the Top,John Braine,ONSHELF,null
+The Alexandria Quartet (to 1960),Lawrence Durrell,ONSHELF,null
+The London Novels (to 1960),Colin MacInnes,ONSHELF,null
+The Assistant,Bernard Malamud,ONSHELF,null
+The Bell,Iris Murdoch,ONSHELF,null
+Saturday Night and Sunday Morning,Alan Sillitoe,ONSHELF,null
+The Once and Future King,T. H. White,ONSHELF,null
+The Mansion,William Faulkner,ONSHELF,null
+Goldfinger,Ian Fleming,ONSHELF,null
+Facial Justice,L. P. Hartley,ONSHELF,null
+The Balkans Trilogy (to 1965),Olivia Manning,ONSHELF,null
+The Mighty and Their Fall,Ivy Compton-Burnett,ONSHELF,null
+Catch-22,Joseph Heller,ONSHELF,null
+The Fox in the Attic,Richard Hughes,ONSHELF,null
+Riders in the Chariot,Patrick White,ONSHELF,null
+The Old Men at the Zoo,Angus Wilson,CHECKEDOUT,Tue Jul 30 13:48:14 EDT 2019
+Another Country,James Baldwin,ONSHELF,null
+An Error of Judgment,Pamela Hansford Johnson,ONSHELF,null
+Island,Aldous Huxley,ONSHELF,null
+The Golden Notebook,Doris Lessing,ONSHELF,null
+Pale Fire,Vladimir Nabokov,ONSHELF,null
+The Girls of Slender Means,Muriel Spark,ONSHELF,null
+The Spire,William Golding,ONSHELF,null
+Heartland,Wilson Harris,ONSHELF,null
+A Single Man,Christopher Isherwood,ONSHELF,null
+The Defence,Vladimir Nabokov,ONSHELF,null
+Late Call,Angus Wilson,ONSHELF,null
+The Lockwood Concern,John O'Hara,ONSHELF,null
+The Mandelbaum Gate,Muriel Spark,ONSHELF,null
+A Man of the People,Chinua Achebe,ONSHELF,null
+The Anti-Death League,Kingsley Amis,ONSHELF,null
+Giles Goat-Boy,John Barth,ONSHELF,null
+The Late Bourgeois World,Nadine Gordimer,ONSHELF,null
+The Last Gentleman,Walker Percy,ONSHELF,null
+The Vendor of Sweets,R. K. Narayan,ONSHELF,null
+The Image Men,J. B. Priestley,ONSHELF,null
+Cocksure,Mordecai Richler,ONSHELF,null
+Pavane,Keith Roberts,ONSHELF,null
+The French Lieutenant's Woman,John Fowles,ONSHELF,null
+Portnoy's Complaint,Philip Roth,ONSHELF,null
+Bomber,Len Deighton,ONSHELF,null
+Sweet Dreams,Michael Frayn,ONSHELF,null
+Gravity's Rainbow,Thomas Pynchon,ONSHELF,null
+Humboldt's Gift,Saul Bellow,CHECKEDOUT,null
+The History Man,Malcolm Bradbury,ONSHELF,null
+The Doctor's Wife,Brian Moore,ONSHELF,null
+Falstaff,Robert Nye,ONSHELF,null
+How to Save Your Own Life,Erica Jong,ONSHELF,null
+Farewell Companions,James Plunkett,ONSHELF,null
+Staying On,Paul Scott,ONSHELF,null
+The Coup,John Updike,ONSHELF,null
+The Unlimited Dream Company,J. G. Ballard,ONSHELF,null
+Dubin's Lives,Bernard Malamud,ONSHELF,null
+A Bend in the River,V. S. Naipaul,ONSHELF,null
+Sophie's Choice,William Stryon,ONSHELF,null
+Life in the West,Brian Aldiss,CHECKEDOUT,null
+Riddley Walker,Russell Hoban,ONSHELF,null
+How Far Can You Go?,David Lodge,ONSHELF,null
+A Confederacy of Dunces,John Kennedy Toole,ONSHELF,null
+Lanark,Alasdair Gray,ONSHELF,null
+Darconville's Cat,Alexander Theroux,ONSHELF,null
+The Mosquito Coast,Paul Theroux,ONSHELF,null
+Creation,Gore Vidal,CHECKEDOUT,null
+The Rebel Angels,Robertson Davies,ONSHELF,null
+Ancient Evenings,Norman Mailer,ONSHELF,null
 It's a Wonderful Life (1946),null,ONSHELF,null,DVD
 Miracle on 34th Street (1947),null,ONSHELF,null,DVD
 Saving Private Ryan (1998),null,ONSHELF,null,DVD
 E.T. The Extra-Terrestrial (1982),null,ONSHELF,null,DVD
 The Bridge on the River Kwai (1957),null,ONSHELF,null,DVD
-It's a Wonderful Life (1946),null,ONSHELF,null,DVD
-Miracle on 34th Street (1947),null,ONSHELF,null,DVD
-Saving Private Ryan (1998),null,ONSHELF,null,DVD
-E.T. The Extra-Terrestrial (1982),null,ONSHELF,null,DVD
-The Bridge on the River Kwai (1957),null,ONSHELF,null,DVD
-It's a Wonderful Life (1946),null,ONSHELF,null,DVD
-Miracle on 34th Street (1947),null,ONSHELF,null,DVD
-Saving Private Ryan (1998),null,ONSHELF,null,DVD
-E.T. The Extra-Terrestrial (1982),null,ONSHELF,null,DVD
-The Bridge on the River Kwai (1957),null,ONSHELF,null,DVD
-It's a Wonderful Life (1946),null,ONSHELF,null,DVD
-Miracle on 34th Street (1947),null,ONSHELF,null,DVD
-Saving Private Ryan (1998),null,ONSHELF,null,DVD
-E.T. The Extra-Terrestrial (1982),null,ONSHELF,null,DVD
-The Bridge on the River Kwai (1957),null,ONSHELF,null,DVD
+It's a Wonderful Life (1946),ONSHELF,DVD
+Miracle on 34th Street (1947),ONSHELF,DVD
+Saving Private Ryan (1998),ONSHELF,DVD
+E.T. The Extra-Terrestrial (1982),ONSHELF,DVD
+The Bridge on the River Kwai (1957),ONSHELF,DVD

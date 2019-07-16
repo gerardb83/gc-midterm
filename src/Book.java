@@ -10,7 +10,7 @@ public class Book extends Item {
 	private Status status = Status.ONSHELF;
 
 	private Date dueDate;
-	
+
 	private Type type = Type.BOOK;
 
 	public String getTitle() {
@@ -74,18 +74,21 @@ public class Book extends Item {
 	}
 
 	public Type getType() {
+
 		super.getType();
-;		return type;
+		;
+		return type;
 	}
-	
+
 	public void setType(Type type) {
+
 		this.type = type;
 	}
 
 	@Override
 	public String toString() {
 
-		return "Books [title=" + title + ", author=" + author + ", status=" + status + ", dueDate=" + dueDate + "]";
+		return String.format("%s,%s,%s,%s,%s", getTitle(), getAuthor(), getStatus(), getDueDate(), getType());
 	}
 
 	@Override

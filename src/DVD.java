@@ -8,15 +8,16 @@ public class DVD extends Item {
 	private String author;
 
 	private Date dueDate;
-	
+
 	private Type type = Type.DVD;
 
-
 	public DVD() {
+
 		super();
 	}
 
 	public DVD(String title) {
+
 		super();
 		this.title = title;
 	}
@@ -54,21 +55,23 @@ public class DVD extends Item {
 
 		this.dueDate = dueDate;
 	}
-	
 
 	public Type getType() {
+
 		super.getType();
-;		return type;
+		;
+		return type;
 	}
 
 	public void setType(Type type) {
+
 		this.type = type;
 	}
-	
+
 	@Override
 	public String toString() {
 
-		return "DVD [title=" + title + ", author=" + author + ", dueDate=" + dueDate + "]";
+		return String.format("%s,%s,%s,%s", getTitle(), getAuthor(), getStatus(), getType());
 	}
 
 	@Override
