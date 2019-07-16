@@ -6,10 +6,12 @@ public class LibraryTextFile {
 
 	private static FileLinesHelper linesHelper = new FileLinesHelper("items.txt");
 
-	private static Book convertLineToItem(String line) {
+	private static Item convertLineToItem(String line) {
 
 		String[] parts = line.split(",");
-		Book books = new Book();
+		String tempType = parts[3].trim();
+		if (tempType.equals("BOOK")) {
+			Book books = new Book();
 		books.setTitle(parts[0]);
 		books.setAuthor(parts[1].trim());
 		String tempStatus = parts[2].trim();
@@ -21,11 +23,26 @@ public class LibraryTextFile {
 			books.setStatus(Status.HOLD);
 		}
 		return books;
-	}
+		} else if (tempType.equals("DVD")){
+			DVD dvds = new DVD();
+			dvds.setTitle(parts[0]);
+			dvds.setAuthor(null);
+			String tempStatus = parts[2].trim();
+			if (tempStatus.equals("ONSHELF")) {
+				dvds.setStatus(Status.ONSHELF);
+			} else if (tempStatus.equals("CHECKEDOUT")) {
+				dvds.setStatus(Status.CHECKEDOUT);
+			} else if (tempStatus.equals("HOLD")) {
+				dvds.setStatus(Status.HOLD);
+			}
+		return dvds;
+		}
+		return null;
+		}
 
 	private static String convertItemToLine(Item items) {
 
-		return String.format("%s,%s,%s,%s", items.getTitle(), items.getAuthor(), items.getStatus(), items.getDueDate());
+		return String.format("%s,%s,%s,%s,%s", items.getTitle(), items.getAuthor(), items.getStatus(), items.getDueDate(), items.getType());
 	}
 
 	public static List<Item> readFile() {
@@ -46,8 +63,10 @@ public class LibraryTextFile {
 		}
 		linesHelper.rewriteFile(lines);
 	}
-//	public static void appendToFile(Book item) throws IOException {
-//		String line = convertItemToLine(item);
-//		linesHelper.appendToFile(line);
-//	}
+	public static void appendToFile(List<DVD> item) throws IOException {
+		for (DVD each : item) {
+		String line = convertItemToLine(each);
+		linesHelper.appendToFile(line);
+		}
+	}
 }

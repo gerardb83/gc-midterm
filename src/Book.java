@@ -10,6 +10,8 @@ public class Book extends Item {
 	private Status status = Status.ONSHELF;
 
 	private Date dueDate;
+	
+	private Type type = Type.BOOK;
 
 	public String getTitle() {
 
@@ -69,6 +71,15 @@ public class Book extends Item {
 		super();
 		this.title = title;
 		this.author = author;
+	}
+
+	public Type getType() {
+		super.getType();
+;		return type;
+	}
+	
+	public void setType(Type type) {
+		this.type = type;
 	}
 
 	@Override

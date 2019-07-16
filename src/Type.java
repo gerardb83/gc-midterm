@@ -1,3 +1,3 @@
 public enum Type {
-	DVD, Book;
+	DVD, BOOK;
 }

@@ -2,6 +2,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -17,6 +18,18 @@ public class BooksApp {
 		if (Files.notExists(path)) {
 			Files.createFile(path);
 		}
+		
+		List<DVD> dvds = new ArrayList<>();
+		
+		dvds.add(new DVD ("It's a Wonderful Life (1946)"));
+		dvds.add(new DVD ("Miracle on 34th Street (1947)"));
+		dvds.add(new DVD ("Saving Private Ryan (1998)"));
+		dvds.add(new DVD ("E.T. The Extra-Terrestrial (1982)"));
+		dvds.add(new DVD ("The Bridge on the River Kwai (1957)"));
+
+
+		LibraryTextFile.appendToFile(dvds);
+		
 		int selection = 0;
 		List<Item> books = LibraryTextFile.readFile();
 		LibraryTextFile.rewriteFile(books);
