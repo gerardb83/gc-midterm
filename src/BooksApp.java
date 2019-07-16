@@ -1,9 +1,7 @@
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.text.DecimalFormat;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -14,7 +12,7 @@ public class BooksApp {
 	static Scanner scan = new Scanner(System.in);
 	public static DecimalFormat df = new DecimalFormat("00");
 	
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws Exception {
 
 		Path path = Paths.get("items.txt");
 	    if (Files.notExists(path)) {
@@ -23,6 +21,7 @@ public class BooksApp {
 	        
 		int selection = 0;
 		List<Book> books = LibraryTextFile.readFile();
+		LibraryTextFile.rewriteFile(books);
 	
 //		List<Book> books = new ArrayList<>();
 //		books.add(new Book("The Alchemist", "Paulo Coelho"));
@@ -58,7 +57,7 @@ public class BooksApp {
 		return dt;
 	}
 
-	public static void displayBooks(List<Book> books) {
+	public static void displayBooks(List<Book> books) throws Exception {
 		System.out.println("\nBibliotheca Catalog");
 		System.out.println("================================================================\n");
 		System.out.printf("%-50s %-50s\n", "Title", "Author");
@@ -98,7 +97,7 @@ public class BooksApp {
 		}
 	}
 
-	public static void bookCheckout(Scanner scan, List<Book> books) {
+	public static void bookCheckout(Scanner scan, List<Book> books) throws Exception {
 
 		String[] values = { "y", "n" };
 		String answer = Validator.getStringMatching(scan, "Would you like to checckout? (y/n)", values);
@@ -114,6 +113,7 @@ public class BooksApp {
 				selectedBook.setDueDate(calcDueDate());
 				System.out.println(selectedBook.getTitle());
 				System.out.println("Checkout successful! " + selectedBook.getDueDate());
+				LibraryTextFile.rewriteFile(books);
 				displayMenu();
 			} else {
 				System.out.println("Sorry, " + selectedBook.getTitle() + " is " + selectedBook.getStatus());

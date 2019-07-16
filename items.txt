@@ -1,99 +1,99 @@
-Party Going, Henry Green
-After Many a Summer, Aldous Huxley
-Finnegans Wake, James Joyce
-At Swim-Two-Birds, Flann O'Brien
-The Power and the Glory, Graham Greene
-For Whom the Bell Tolls, Ernest Hemingway
-Strangers and Brothers (to 1970), C. P. Snow
-The Aerodrome, Rex Warner
-The Horse's Mouth, Joyce Cary
-The Razor's Edge, Somerset Maugham
-Brideshead Revisited, Evelyn Waugh
-Titus Groan, Mervyn Peake
-The Victim, Saul Bellow
-Under the Volcano, Malcolm Lowry
-The Heart of the Matter, Graham Greene
-Ape and Essence, Aldous Huxley
-The Naked and the Dead, Norman Mailer
-No Highway, Nevil Shute
-The Heat of the Day, Elizabeth Bowen
-Nineteen Eighty-Four, George Orwell
-The Body, William Sansom
-Scenes from Provincial Life, William Cooper
-The Disenchanted, Budd Schulberg
-A Dance to the Music of Time (to 1975), Anthony Powell
-The Catcher in the Rye, J. D. Salinger
-The Chronicle of Ancient Sunlight (to 1969), Henry Williamson
-The Caine Mutiny, Herman Wouk
-Invisible Man, Ralph Ellison
-The Old Man and the Sea, Ernest Hemingway
-The Groves of Academe, Mary McCarthy
-Wise Blood, Flannery O'Connor
-Sword of Honour (to 1961), Evelyn Waugh
-The Long Goodbye, Raymond Chandler
-Lucky Jim, Kingsley Amis
-Room at the Top, John Braine
-The Alexandria Quartet (to 1960), Lawrence Durrell
-The London Novels (to 1960), Colin MacInnes
-The Assistant, Bernard Malamud
-The Bell, Iris Murdoch
-Saturday Night and Sunday Morning, Alan Sillitoe
-The Once and Future King, T. H. White
-The Mansion, William Faulkner
-Goldfinger, Ian Fleming
-Facial Justice, L. P. Hartley
-The Balkans Trilogy (to 1965), Olivia Manning
-The Mighty and Their Fall, Ivy Compton-Burnett
-Catch-22, Joseph Heller
-The Fox in the Attic, Richard Hughes
-Riders in the Chariot, Patrick White
-The Old Men at the Zoo, Angus Wilson
-Another Country, James Baldwin
-An Error of Judgment, Pamela Hansford Johnson
-Island, Aldous Huxley
-The Golden Notebook, Doris Lessing
-Pale Fire, Vladimir Nabokov
-The Girls of Slender Means, Muriel Spark
-The Spire, William Golding
-Heartland, Wilson Harris
-A Single Man, Christopher Isherwood
-The Defence, Vladimir Nabokov
-Late Call, Angus Wilson
-The Lockwood Concern, John O'Hara
-The Mandelbaum Gate, Muriel Spark
-A Man of the People, Chinua Achebe
-The Anti-Death League, Kingsley Amis
-Giles Goat-Boy, John Barth
-The Late Bourgeois World, Nadine Gordimer
-The Last Gentleman, Walker Percy
-The Vendor of Sweets, R. K. Narayan
-The Image Men, J. B. Priestley
-Cocksure, Mordecai Richler
-Pavane, Keith Roberts
-The French Lieutenant's Woman, John Fowles
-Portnoy's Complaint, Philip Roth
-Bomber, Len Deighton
-Sweet Dreams, Michael Frayn
-Gravity's Rainbow, Thomas Pynchon
-Humboldt's Gift, Saul Bellow
-The History Man, Malcolm Bradbury
-The Doctor's Wife, Brian Moore
-Falstaff, Robert Nye
-How to Save Your Own Life, Erica Jong
-Farewell Companions, James Plunkett
-Staying On, Paul Scott
-The Coup, John Updike
-The Unlimited Dream Company, J. G. Ballard
-Dubin's Lives, Bernard Malamud
-A Bend in the River, V. S. Naipaul
-Sophie's Choice, William Stryon
-Life in the West, Brian Aldiss
-Riddley Walker, Russell Hoban
-How Far Can You Go?, David Lodge
-A Confederacy of Dunces, John Kennedy Toole
-Lanark, Alasdair Gray
-Darconville's Cat, Alexander Theroux
-The Mosquito Coast, Paul Theroux
-Creation, Gore Vidal
-The Rebel Angels, Robertson Davies
-Ancient Evenings, Norman Mailer
+Party Going,Henry Green,ONSHELF
+After Many a Summer,Aldous Huxley,ONSHELF
+Finnegans Wake,James Joyce,ONSHELF
+At Swim-Two-Birds,Flann O'Brien,ONSHELF
+The Power and the Glory,Graham Greene,ONSHELF
+For Whom the Bell Tolls,Ernest Hemingway,ONSHELF
+Strangers and Brothers (to 1970),C. P. Snow,ONSHELF
+The Aerodrome,Rex Warner,ONSHELF
+The Horse's Mouth,Joyce Cary,ONSHELF
+The Razor's Edge,Somerset Maugham,ONSHELF
+Brideshead Revisited,Evelyn Waugh,ONSHELF
+Titus Groan,Mervyn Peake,ONSHELF
+The Victim,Saul Bellow,ONSHELF
+Under the Volcano,Malcolm Lowry,ONSHELF
+The Heart of the Matter,Graham Greene,ONSHELF
+Ape and Essence,Aldous Huxley,ONSHELF
+The Naked and the Dead,Norman Mailer,ONSHELF
+No Highway,Nevil Shute,ONSHELF
+The Heat of the Day,Elizabeth Bowen,ONSHELF
+Nineteen Eighty-Four,George Orwell,ONSHELF
+The Body,William Sansom,ONSHELF
+Scenes from Provincial Life,William Cooper,ONSHELF
+The Disenchanted,Budd Schulberg,ONSHELF
+A Dance to the Music of Time (to 1975),Anthony Powell,ONSHELF
+The Catcher in the Rye,J. D. Salinger,ONSHELF
+The Chronicle of Ancient Sunlight (to 1969),Henry Williamson,ONSHELF
+The Caine Mutiny,Herman Wouk,ONSHELF
+Invisible Man,Ralph Ellison,ONSHELF
+The Old Man and the Sea,Ernest Hemingway,ONSHELF
+The Groves of Academe,Mary McCarthy,ONSHELF
+Wise Blood,Flannery O'Connor,ONSHELF
+Sword of Honour (to 1961),Evelyn Waugh,ONSHELF
+The Long Goodbye,Raymond Chandler,ONSHELF
+Lucky Jim,Kingsley Amis,ONSHELF
+Room at the Top,John Braine,ONSHELF
+The Alexandria Quartet (to 1960),Lawrence Durrell,ONSHELF
+The London Novels (to 1960),Colin MacInnes,ONSHELF
+The Assistant,Bernard Malamud,ONSHELF
+The Bell,Iris Murdoch,ONSHELF
+Saturday Night and Sunday Morning,Alan Sillitoe,ONSHELF
+The Once and Future King,T. H. White,ONSHELF
+The Mansion,William Faulkner,ONSHELF
+Goldfinger,Ian Fleming,ONSHELF
+Facial Justice,L. P. Hartley,ONSHELF
+The Balkans Trilogy (to 1965),Olivia Manning,ONSHELF
+The Mighty and Their Fall,Ivy Compton-Burnett,ONSHELF
+Catch-22,Joseph Heller,ONSHELF
+The Fox in the Attic,Richard Hughes,ONSHELF
+Riders in the Chariot,Patrick White,ONSHELF
+The Old Men at the Zoo,Angus Wilson,ONSHELF
+Another Country,James Baldwin,ONSHELF
+An Error of Judgment,Pamela Hansford Johnson,ONSHELF
+Island,Aldous Huxley,ONSHELF
+The Golden Notebook,Doris Lessing,ONSHELF
+Pale Fire,Vladimir Nabokov,ONSHELF
+The Girls of Slender Means,Muriel Spark,ONSHELF
+The Spire,William Golding,ONSHELF
+Heartland,Wilson Harris,ONSHELF
+A Single Man,Christopher Isherwood,ONSHELF
+The Defence,Vladimir Nabokov,ONSHELF
+Late Call,Angus Wilson,ONSHELF
+The Lockwood Concern,John O'Hara,ONSHELF
+The Mandelbaum Gate,Muriel Spark,ONSHELF
+A Man of the People,Chinua Achebe,ONSHELF
+The Anti-Death League,Kingsley Amis,ONSHELF
+Giles Goat-Boy,John Barth,ONSHELF
+The Late Bourgeois World,Nadine Gordimer,ONSHELF
+The Last Gentleman,Walker Percy,ONSHELF
+The Vendor of Sweets,R. K. Narayan,ONSHELF
+The Image Men,J. B. Priestley,ONSHELF
+Cocksure,Mordecai Richler,ONSHELF
+Pavane,Keith Roberts,ONSHELF
+The French Lieutenant's Woman,John Fowles,ONSHELF
+Portnoy's Complaint,Philip Roth,ONSHELF
+Bomber,Len Deighton,ONSHELF
+Sweet Dreams,Michael Frayn,ONSHELF
+Gravity's Rainbow,Thomas Pynchon,ONSHELF
+Humboldt's Gift,Saul Bellow,CHECKEDOUT
+The History Man,Malcolm Bradbury,ONSHELF
+The Doctor's Wife,Brian Moore,ONSHELF
+Falstaff,Robert Nye,ONSHELF
+How to Save Your Own Life,Erica Jong,ONSHELF
+Farewell Companions,James Plunkett,ONSHELF
+Staying On,Paul Scott,ONSHELF
+The Coup,John Updike,ONSHELF
+The Unlimited Dream Company,J. G. Ballard,ONSHELF
+Dubin's Lives,Bernard Malamud,ONSHELF
+A Bend in the River,V. S. Naipaul,ONSHELF
+Sophie's Choice,William Stryon,ONSHELF
+Life in the West,Brian Aldiss,ONSHELF
+Riddley Walker,Russell Hoban,ONSHELF
+How Far Can You Go?,David Lodge,ONSHELF
+A Confederacy of Dunces,John Kennedy Toole,ONSHELF
+Lanark,Alasdair Gray,ONSHELF
+Darconville's Cat,Alexander Theroux,ONSHELF
+The Mosquito Coast,Paul Theroux,ONSHELF
+Creation,Gore Vidal,CHECKEDOUT
+The Rebel Angels,Robertson Davies,ONSHELF
+Ancient Evenings,Norman Mailer,ONSHELF

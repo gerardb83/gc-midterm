@@ -1,5 +1,5 @@
 
-//import java.io.IOException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,9 +22,9 @@ public class LibraryTextFile {
 		return books;
 	}
 
-//	private static String convertItemToLine(Book books) {
-//		return String.format("%s,%s", books.getTitle(), books.getAuthor());
-//	}
+	private static String convertItemToLine(Book books) {
+		return String.format("%s,%s,%s", books.getTitle(), books.getAuthor(), books.getStatus());
+	}
 
 	public static List<Book> readFile() {
 		List<String> lines = linesHelper.readFile();
@@ -35,13 +35,13 @@ public class LibraryTextFile {
 		return items;
 	}
 
-//	public static void rewriteFile(List<Book> items) throws IOException {
-//		List<String> lines = new ArrayList<>(items.size());
-//		for (Book item : items) {
-//			lines.add(convertItemToLine(item));
-//		}
-//		linesHelper.rewriteFile(lines);
-//	}
+	public static void rewriteFile(List<Book> items) throws IOException {
+		List<String> lines = new ArrayList<>(items.size());
+		for (Book item : items) {
+			lines.add(convertItemToLine(item));
+		}
+		linesHelper.rewriteFile(lines);
+	}
 
 //	public static void appendToFile(Book item) throws IOException {
 //		String line = convertItemToLine(item);
