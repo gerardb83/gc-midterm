@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class Books {
+public class Book {
 
 	private String title;
 
@@ -50,12 +50,12 @@ public class Books {
 		this.dueDate = dueDate;
 	}
 
-	public Books() {
+	public Book() {
 
 		super();
 	}
 
-	public Books(String title, String author) {
+	public Book(String title, String author) {
 
 		super();
 		this.title = title;

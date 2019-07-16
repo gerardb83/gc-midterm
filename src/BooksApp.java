@@ -11,20 +11,20 @@ public class BooksApp {
 	public static void main(String[] args) {
 
 		int selection = 0;
-		List<Books> book = new ArrayList<>();
-		book.add(new Books("The Alchemist", "Paulo Coelho"));
-		book.add(new Books("Three Musketeers", "Alexandre Dumas"));
-		book.add(new Books("On the Road", "Jack Keuroac"));
+		List<Book> books = new ArrayList<>();
+		books.add(new Book("The Alchemist", "Paulo Coelho"));
+		books.add(new Book("Three Musketeers", "Alexandre Dumas"));
+		books.add(new Book("On the Road", "Jack Keuroac"));
 		System.out.println("Welcome to the Grand Circus Bibliotheca!");
 		displayMenu();
 		do {
 			selection = Validator.getInt(scan, "Please make a selection (enter number): ", 1, 4);
 			if (selection == 1) {
-				displayBooks(book);
+				displayBooks(books);
 			} else if (selection == 2) {
-				searchAuthors(scan, book);
+				searchAuthors(scan, books);
 			} else if (selection == 3) {
-				searchTitles(scan, book);
+				searchTitles(scan, books);
 			}
 		} while (selection != 4);
 		System.out.println("Goodbye!");
@@ -45,7 +45,7 @@ public class BooksApp {
 		return dt;
 	}
 
-	public static void displayBooks(List<Books> books) {
+	public static void displayBooks(List<Book> books) {
 
 		System.out.println("\nBibliotheca Catalog");
 		System.out.println("===================================================\n");
@@ -57,29 +57,33 @@ public class BooksApp {
 		bookCheckout(scan, books);
 	}
 
-	public static void searchAuthors(Scanner scan, List<Books> books) {
+	public static void searchAuthors(Scanner scan, List<Book> books) {
 
-		String userInput = Validator.getStringMatching(scan, "Please enter the author's name.", books);
+		System.out.println("Please enter an author's name to search.");
+		String userInput = scan.next();
 		for (int i = 0; i < books.size(); i++) {
-			if (userInput.equalsIgnoreCase(books.get(i).getAuthor())) {
+			if (books.get(i).getAuthor().toLowerCase().contains(userInput.toLowerCase())) {
+//			if (userInput.equalsIgnoreCase(books.get(i).getAuthor())) {
 				System.out.printf("%-15s %-15s\n", (i + 1) + ". " + books.get(i).getTitle() + " by ",
 						books.get(i).getAuthor());
 			}
 		}
 	}
 
-	public static void searchTitles(Scanner scan, List<Books> books) {
+	public static void searchTitles(Scanner scan, List<Book> books) {
 
-		String userInput = Validator.getStringMatchingTitle(scan, "Please enter the Title", books);
+		System.out.println("Please enter a Title to search");
+		String userInput = scan.nextLine();
 		for (int i = 0; i < books.size(); i++) {
-			if (userInput.equalsIgnoreCase(books.get(i).getTitle())) {
+			if (books.get(i).getTitle().toLowerCase().contains(userInput.toLowerCase())) {
+//			if (userInput.equalsIgnoreCase(books.get(i).getTitle())) {
 				System.out.printf("%-15s %-15s\n", (i + 1) + ". " + books.get(i).getTitle() + " by ",
 						books.get(i).getAuthor());
 			}
 		}
 	}
 
-	public static void bookCheckout(Scanner scan, List<Books> books) {
+	public static void bookCheckout(Scanner scan, List<Book> books) {
 
 		String[] values = { "y", "n" };
 		String answer = Validator.getStringMatching(scan, "Would you like to checckout? (y/n)", values);
@@ -88,18 +92,22 @@ public class BooksApp {
 					books.size());
 			userInput -= 1;
 //			System.out.println(books.get(userInput).getStatus());
-			if (books.get(userInput).getStatus().equals(Status.ONSHELF)) {
-				books.get(userInput).setStatus(Status.CHECKEDOUT);
+			Book selectedBook = books.get(userInput);
+			if (selectedBook.getStatus().equals(Status.ONSHELF)) {
+				selectedBook.setStatus(Status.CHECKEDOUT);
 //				System.out.println(books.get(userInput).getStatus());
-				books.get(userInput).setDueDate(calcDueDate());
-				System.out.println("Checkout successful! " + books.get(userInput).getDueDate());
+				selectedBook.setDueDate(calcDueDate());
+				System.out.println("Checkout successful! " + selectedBook.getDueDate());
 				displayMenu();
 			} else {
-				System.out.println(
-						"Sorry, " + books.get(userInput).getTitle() + " is " + books.get(userInput).getStatus());
+				System.out.println("Sorry, " + selectedBook.getTitle() + " is " + selectedBook.getStatus());
 			}
 		} else {
 			displayMenu();
 		}
+	}
+
+	public static void displayBanner() {
+
 	}
 }
