@@ -1,7 +1,7 @@
 Party Going,Henry Green,ONSHELF,null,BOOK
 After Many a Summer,Aldous Huxley,ONSHELF,null,BOOK
 Finnegans Wake,James Joyce,ONSHELF,null,BOOK
-At Swim-Two-Birds,Flann O'Brien,ONSHELF,null,BOOK
+At Swim-Two-Birds,Flann O'Brien,CHECKEDOUT,null,BOOK
 The Power and the Glory,Graham Greene,ONSHELF,null,BOOK
 For Whom the Bell Tolls,Ernest Hemingway,ONSHELF,null,BOOK
 Strangers and Brothers (to 1970),C. P. Snow,ONSHELF,null,BOOK
@@ -12,7 +12,7 @@ Brideshead Revisited,Evelyn Waugh,ONSHELF,null,BOOK
 Titus Groan,Mervyn Peake,ONSHELF,null,BOOK
 The Victim,Saul Bellow,ONSHELF,null,BOOK
 Under the Volcano,Malcolm Lowry,ONSHELF,null,BOOK
-The Heart of the Matter,Graham Greene,ONSHELF,null,BOOK
+The Heart of the Matter,Graham Greene,CHECKEDOUT,null,BOOK
 Ape and Essence,Aldous Huxley,ONSHELF,null,BOOK
 The Naked and the Dead,Norman Mailer,ONSHELF,null,BOOK
 No Highway,Nevil Shute,ONSHELF,null,BOOK
@@ -50,10 +50,10 @@ Riders in the Chariot,Patrick White,ONSHELF,null,BOOK
 The Old Men at the Zoo,Angus Wilson,CHECKEDOUT,null,BOOK
 Another Country,James Baldwin,ONSHELF,null,BOOK
 An Error of Judgment,Pamela Hansford Johnson,ONSHELF,null,BOOK
-Island,Aldous Huxley,ONSHELF,null,BOOK
+Island,Aldous Huxley,CHECKEDOUT,null,BOOK
 The Golden Notebook,Doris Lessing,ONSHELF,null,BOOK
 Pale Fire,Vladimir Nabokov,ONSHELF,null,BOOK
-The Girls of Slender Means,Muriel Spark,ONSHELF,null,BOOK
+The Girls of Slender Means,Muriel Spark,CHECKEDOUT,null,BOOK
 The Spire,William Golding,ONSHELF,null,BOOK
 Heartland,Wilson Harris,ONSHELF,null,BOOK
 A Single Man,Christopher Isherwood,ONSHELF,null,BOOK
@@ -80,7 +80,7 @@ The History Man,Malcolm Bradbury,ONSHELF,null,BOOK
 The Doctor's Wife,Brian Moore,ONSHELF,null,BOOK
 Falstaff,Robert Nye,ONSHELF,null,BOOK
 How to Save Your Own Life,Erica Jong,ONSHELF,null,BOOK
-Farewell Companions,James Plunkett,ONSHELF,null,BOOK
+Farewell Companions,James Plunkett,CHECKEDOUT,null,BOOK
 Staying On,Paul Scott,ONSHELF,null,BOOK
 The Coup,John Updike,ONSHELF,null,BOOK
 The Unlimited Dream Company,J. G. Ballard,ONSHELF,null,BOOK
@@ -93,17 +93,12 @@ How Far Can You Go?,David Lodge,ONSHELF,null,BOOK
 A Confederacy of Dunces,John Kennedy Toole,ONSHELF,null,BOOK
 Lanark,Alasdair Gray,ONSHELF,null,BOOK
 Darconville's Cat,Alexander Theroux,ONSHELF,null,BOOK
-The Mosquito Coast,Paul Theroux,ONSHELF,null,BOOK
+The Mosquito Coast,Paul Theroux,CHECKEDOUT,null,BOOK
 Creation,Gore Vidal,CHECKEDOUT,null,BOOK
-The Rebel Angels,Robertson Davies,ONSHELF,null,BOOK
-Ancient Evenings,Norman Mailer,CHECKEDOUT,Tue Jul 30 17:00:52 EDT 2019,BOOK
+The Rebel Angels,Robertson Davies,CHECKEDOUT,null,BOOK
+Ancient Evenings,Norman Mailer,ONSHELF,null,BOOK
 It's a Wonderful Life (1946),null,ONSHELF,null,DVD
 Miracle on 34th Street (1947),null,ONSHELF,null,DVD
 Saving Private Ryan (1998),null,ONSHELF,null,DVD
-E.T. The Extra-Terrestrial (1982),null,ONSHELF,null,DVD
+E.T. The Extra-Terrestrial (1982),null,CHECKEDOUT,null,DVD
 The Bridge on the River Kwai (1957),null,ONSHELF,null,DVD
-It's a Wonderful Life (1946),ONSHELF,DVD
-Miracle on 34th Street (1947),ONSHELF,DVD
-Saving Private Ryan (1998),ONSHELF,DVD
-E.T. The Extra-Terrestrial (1982),ONSHELF,DVD
-The Bridge on the River Kwai (1957),ONSHELF,DVD

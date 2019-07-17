@@ -3,11 +3,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LibraryTextFile {
-
 	private static FileLinesHelper linesHelper = new FileLinesHelper("items.txt");
-
+	
 	private static Item convertLineToItem(String line) {
-
 		String[] parts = line.split(",");
 		String tempType = parts[4].trim();
 		if (tempType.equals("BOOK")) {
@@ -26,7 +24,6 @@ public class LibraryTextFile {
 		} else if (tempType.equals("DVD")) {
 			DVD dvds = new DVD();
 			dvds.setTitle(parts[0]);
-			dvds.setAuthor(null);
 			String tempStatus = parts[2].trim();
 			if (tempStatus.equals("ONSHELF")) {
 				dvds.setStatus(Status.ONSHELF);
@@ -41,14 +38,20 @@ public class LibraryTextFile {
 	}
 
 	private static String convertItemToLine(Item items) {
+		return items.toLine();
 
-		return items.toString();
-//		return String.format("%s,%s,%s,%s,%s", items.getTitle(), items.getAuthor(),
-//		 items.getStatus(), items.getDueDate(), items.getType());
+	}
+	
+	public static void writeFile(Item item, List<Item> itemsMaster) throws Exception{
+		for (Item each : itemsMaster) {
+			if(each.getTitle().equals(item.getTitle())){
+				each.setStatus(item.getStatus());
+				each.setDueDate(item.getDueDate());
+			}
+		} rewriteFile(itemsMaster);
 	}
 
 	public static List<Item> readFile() {
-
 		List<String> lines = linesHelper.readFile();
 		List<Item> items = new ArrayList<>(lines.size());
 		for (String line : lines) {
@@ -58,19 +61,10 @@ public class LibraryTextFile {
 	}
 
 	public static void rewriteFile(List<Item> items) throws IOException {
-
 		List<String> lines = new ArrayList<>(items.size());
 		for (Item item : items) {
 			lines.add(convertItemToLine(item));
 		}
 		linesHelper.rewriteFile(lines);
 	}
-
-//	public static void appendToFile(List<DVD> item) throws IOException {
-//
-//		for (DVD each : item) {
-//			String line = convertItemToLine(each);
-//			linesHelper.appendToFile(line);
-//		}
-//	}
 }

@@ -1,5 +1,3 @@
-
-
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -12,21 +10,16 @@ import java.util.Collections;
 import java.util.List;
 
 public class FileLinesHelper {
-
 	private Path filePath;
-
 	public FileLinesHelper(Path filePath) {
-
 		this.filePath = filePath;
 	}
 
 	public FileLinesHelper(String filePath) {
-
 		this(Paths.get(filePath));
 	}
 
 	public List<String> readFile() {
-
 		// ** Example of reading a file into a list
 		try {
 			return Files.readAllLines(filePath);
@@ -39,7 +32,6 @@ public class FileLinesHelper {
 	}
 
 	public void appendToFile(String line) throws IOException {
-
 		ensureFileExists();
 		// ** Example of adding to the end of a file
 		// Create a list with the user's food in it
@@ -49,21 +41,18 @@ public class FileLinesHelper {
 	}
 
 	public void rewriteFile(List<String> lines) throws IOException {
-
 		ensureFileExists();
 		// ** Example of rewriting a whole file
 		Files.write(filePath, lines, StandardOpenOption.TRUNCATE_EXISTING);
 	}
 
 	private void ensureFileExists() throws IOException {
-
 		if (Files.notExists(filePath)) {
 			Files.createFile(filePath);
 		}
 	}
 
 	public void clearFile() throws IOException {
-
 		rewriteFile(Collections.emptyList());
 	}
 }
