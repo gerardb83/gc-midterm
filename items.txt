@@ -1,4 +1,4 @@
-Party Going,Henry Green,ONSHELF,null,BOOK
+Party Going,Henry Green,CHECKEDOUT,Wed Jul 31 11:29:52 EDT 2019,BOOK
 After Many a Summer,Aldous Huxley,ONSHELF,null,BOOK
 Finnegans Wake,James Joyce,ONSHELF,null,BOOK
 At Swim-Two-Birds,Flann O'Brien,CHECKEDOUT,null,BOOK
