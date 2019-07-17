@@ -29,12 +29,13 @@ public class Book extends Item {
 	}
 
 	public String getAuthor() {
-
-		return author;
-	}
+			super.getAuthor();
+			return author;
+		}
+	
 
 	public void setAuthor(String author) {
-
+		super.setAuthor(author);
 		this.author = author;
 	}
 

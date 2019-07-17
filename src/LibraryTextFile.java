@@ -67,4 +67,11 @@ public class LibraryTextFile {
 		}
 		linesHelper.rewriteFile(lines);
 	}
+
+	
+//	public static void appendToFile(Item item) throws IOException {
+//		String line = convertItemToLine(item);
+//		linesHelper.appendToFile(line);
+//	}
+
 }

@@ -1,4 +1,4 @@
-Party Going,Henry Green,CHECKEDOUT,Wed Jul 31 11:29:52 EDT 2019,BOOK
+Party Going,Henry Green,CHECKEDOUT,null,BOOK
 After Many a Summer,Aldous Huxley,ONSHELF,null,BOOK
 Finnegans Wake,James Joyce,ONSHELF,null,BOOK
 At Swim-Two-Birds,Flann O'Brien,CHECKEDOUT,null,BOOK
@@ -19,7 +19,7 @@ No Highway,Nevil Shute,ONSHELF,null,BOOK
 The Heat of the Day,Elizabeth Bowen,ONSHELF,null,BOOK
 Nineteen Eighty-Four,George Orwell,ONSHELF,null,BOOK
 The Body,William Sansom,ONSHELF,null,BOOK
-Scenes from Provincial Life,William Cooper,ONSHELF,null,BOOK
+Scenes from Provincial Life,William Cooper,CHECKEDOUT,null,BOOK
 The Disenchanted,Budd Schulberg,ONSHELF,null,BOOK
 A Dance to the Music of Time (to 1975),Anthony Powell,ONSHELF,null,BOOK
 The Catcher in the Rye,J. D. Salinger,ONSHELF,null,BOOK
@@ -30,9 +30,9 @@ The Old Man and the Sea,Ernest Hemingway,ONSHELF,null,BOOK
 The Groves of Academe,Mary McCarthy,ONSHELF,null,BOOK
 Wise Blood,Flannery O'Connor,ONSHELF,null,BOOK
 Sword of Honour (to 1961),Evelyn Waugh,ONSHELF,null,BOOK
-The Long Goodbye,Raymond Chandler,ONSHELF,null,BOOK
+The Long Goodbye,Raymond Chandler,CHECKEDOUT,null,BOOK
 Lucky Jim,Kingsley Amis,ONSHELF,null,BOOK
-Room at the Top,John Braine,ONSHELF,null,BOOK
+Room at the Top,John Braine,HOLD,null,BOOK
 The Alexandria Quartet (to 1960),Lawrence Durrell,ONSHELF,null,BOOK
 The London Novels (to 1960),Colin MacInnes,ONSHELF,null,BOOK
 The Assistant,Bernard Malamud,ONSHELF,null,BOOK
@@ -41,9 +41,9 @@ Saturday Night and Sunday Morning,Alan Sillitoe,ONSHELF,null,BOOK
 The Once and Future King,T. H. White,ONSHELF,null,BOOK
 The Mansion,William Faulkner,ONSHELF,null,BOOK
 Goldfinger,Ian Fleming,ONSHELF,null,BOOK
-Facial Justice,L. P. Hartley,ONSHELF,null,BOOK
+Facial Justice,L. P. Hartley,CHECKEDOUT,null,BOOK
 The Balkans Trilogy (to 1965),Olivia Manning,ONSHELF,null,BOOK
-The Mighty and Their Fall,Ivy Compton-Burnett,ONSHELF,null,BOOK
+The Mighty and Their Fall,Ivy Compton-Burnett,CHECKEDOUT,null,BOOK
 Catch-22,Joseph Heller,ONSHELF,null,BOOK
 The Fox in the Attic,Richard Hughes,ONSHELF,null,BOOK
 Riders in the Chariot,Patrick White,ONSHELF,null,BOOK
@@ -52,8 +52,8 @@ Another Country,James Baldwin,ONSHELF,null,BOOK
 An Error of Judgment,Pamela Hansford Johnson,ONSHELF,null,BOOK
 Island,Aldous Huxley,CHECKEDOUT,null,BOOK
 The Golden Notebook,Doris Lessing,ONSHELF,null,BOOK
-Pale Fire,Vladimir Nabokov,ONSHELF,null,BOOK
-The Girls of Slender Means,Muriel Spark,CHECKEDOUT,null,BOOK
+Pale Fire,Vladimir Nabokov,CHECKEDOUT,null,BOOK
+The Girls of Slender Means,Muriel Spark,ONSHELF,null,BOOK
 The Spire,William Golding,ONSHELF,null,BOOK
 Heartland,Wilson Harris,ONSHELF,null,BOOK
 A Single Man,Christopher Isherwood,ONSHELF,null,BOOK
@@ -74,7 +74,7 @@ The French Lieutenant's Woman,John Fowles,ONSHELF,null,BOOK
 Portnoy's Complaint,Philip Roth,ONSHELF,null,BOOK
 Bomber,Len Deighton,ONSHELF,null,BOOK
 Sweet Dreams,Michael Frayn,ONSHELF,null,BOOK
-Gravity's Rainbow,Thomas Pynchon,ONSHELF,null,BOOK
+Gravity's Rainbow,Thomas Pynchon,CHECKEDOUT,null,BOOK
 Humboldt's Gift,Saul Bellow,CHECKEDOUT,null,BOOK
 The History Man,Malcolm Bradbury,ONSHELF,null,BOOK
 The Doctor's Wife,Brian Moore,ONSHELF,null,BOOK
@@ -96,7 +96,7 @@ Darconville's Cat,Alexander Theroux,ONSHELF,null,BOOK
 The Mosquito Coast,Paul Theroux,CHECKEDOUT,null,BOOK
 Creation,Gore Vidal,CHECKEDOUT,null,BOOK
 The Rebel Angels,Robertson Davies,CHECKEDOUT,null,BOOK
-Ancient Evenings,Norman Mailer,ONSHELF,null,BOOK
+Ancient Evenings,Norman Mailer,CHECKEDOUT,Wed Jul 31 16:56:17 EDT 2019,BOOK
 It's a Wonderful Life (1946),null,ONSHELF,null,DVD
  To Kill a Mockingbird (1962),null,ONSHELF,null,DVD
  Schindler's List (1993),null,ONSHELF,null,DVD
@@ -154,7 +154,7 @@ One Flew Over the Cuckoo's Nest (1975),null,ONSHELF,null,DVD
  The Defiant Ones (1958),null,ONSHELF,null,DVD
  Ben-Hur (1959),null,ONSHELF,null,DVD
  Sergeant York (1941),null,ONSHELF,null,DVD
- Close Encounters of the Third Kind (1977),null,ONSHELF,null,DVD
+ Close Encounters of the Third Kind (1977),null,HOLD,null,DVD
  Dances with Wolves (1990),null,ONSHELF,null,DVD
  The Killing Fields (1984),null,ONSHELF,null,DVD
  Sounder (1972),null,ONSHELF,null,DVD
@@ -162,7 +162,7 @@ One Flew Over the Cuckoo's Nest (1975),null,ONSHELF,null,DVD
  Rain Man (1988),null,ONSHELF,null,DVD
  The Black Stallion (1979),null,ONSHELF,null,DVD
  A Raisin in the Sun (1961),null,ONSHELF,null,DVD
- Silkwood (1983),null,ONSHELF,null,DVD
+ Silkwood (1983),null,HOLD,null,DVD
  The Day the Earth Stood Still (1951),null,ONSHELF,null,DVD
  An Officer and a Gentleman (1982),null,ONSHELF,null,DVD
  The Spirit of St. Louis (1957),null,ONSHELF,null,DVD
@@ -189,7 +189,7 @@ One Flew Over the Cuckoo's Nest (1975),null,ONSHELF,null,DVD
  Hotel Rwanda (2004),null,ONSHELF,null,DVD
  The Paper Chase (1973),null,ONSHELF,null,DVD
  Fame (1980),null,ONSHELF,null,DVD
- A Beautiful Mind (2001),null,ONSHELF,null,DVD
+ A Beautiful Mind (2001),null,CHECKEDOUT,null,DVD
  Captains Courageous (1937),null,ONSHELF,null,DVD
  Places in the Heart (1984),null,ONSHELF,null,DVD
  Searching for Bobby Fischer (1993),null,ONSHELF,null,DVD

@@ -6,12 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class BooksApp {
+public class LibraryApp {
 
 	static Scanner scan = new Scanner(System.in);
-
 	public static DecimalFormat df = new DecimalFormat("00");
-
+	
 	public static void main(String[] args) throws Exception {
 
 		Path path = Paths.get("items.txt");
@@ -20,17 +19,19 @@ public class BooksApp {
 		}
 		int selection = 0;
 		List<Item> itemsMaster = LibraryTextFile.readFile();
+		System.out.println("\nWelcome to Grand Circus Bibliotheca\n");
+		
 		do {
 			selection = displayMenu(itemsMaster);
-		} while (selection != 6);
+		} while (selection != 7);
 		System.out.println("Goodbye!");
 	}
 
 	private static int displayMenu(List<Item> itemsMaster) throws Exception {
 
 		System.out.println(
-				"1. Print Book List\n2. Print DVD List\n3. Search Books by Author \n4. Search Books by Title Keyword\n5. Return Items\n6. Quit");
-		int selection = Validator.getInt(scan, "Please make a selection (enter number): ", 1, 6);
+				"1. Print Book List\n2. Print DVD List\n3. Search Books by Author \n4. Search Books by Title Keyword\n5. Pickup Hold\n6. Return Items\n7. Quit\n");
+		int selection = Validator.getInt(scan, "Please make a selection (enter number): ", 1, 7);
 		if (selection == 1) {
 			displayBooks(getBooks(itemsMaster), itemsMaster);
 		} else if (selection == 2) {
@@ -40,6 +41,8 @@ public class BooksApp {
 		} else if (selection == 4) {
 			searchTitles(scan, itemsMaster);
 		} else if (selection == 5) {
+			pickupHold(scan, itemsMaster);
+		} else if (selection == 6) {
 			returnItems(scan, itemsMaster);
 		}
 		return selection;
@@ -131,15 +134,21 @@ public class BooksApp {
 
 	public static void checkout(Scanner scan, List<Item> typeItems, List<Item> masterList) throws Exception {
 
-		int userInput = Validator.getInt(scan, "Please enter a number from the selection to checkout.", 1,
+		int userInput = Validator.getInt(scan, "Please enter a number from the selection to checkout: \n", 1,
 				typeItems.size());
 		userInput -= 1;
 		Item selectedItem = typeItems.get(userInput);
 		if (selectedItem.getStatus().equals(Status.ONSHELF)) {
 			selectedItem.setStatus(Status.CHECKEDOUT);
 			selectedItem.setDueDate(selectedItem.generateDueDate(selectedItem.getCheckoutdays()));
-			System.out.println(selectedItem.getTitle());
-			System.out.println("Checkout successful! " + selectedItem.getDueDate());
+			System.out.println();
+			if (selectedItem.getType() == Type.BOOK) {
+			System.out.println(selectedItem.getTitle() + " by " + selectedItem.getAuthor());
+			} else {
+				System.out.println(selectedItem.getTitle());
+			}
+			System.out.println("Checkout successful! " + selectedItem.getTitle() + " will be due on " + selectedItem.getDueDate());
+			System.out.println();
 			LibraryTextFile.writeFile(selectedItem, masterList);
 		} else {
 			System.out.println("Sorry, " + selectedItem.getTitle() + " is " + selectedItem.getStatus());
@@ -159,33 +168,68 @@ public class BooksApp {
 			System.out.println(i + ". " + returnItem);
 			i++;
 		}
-		int userInput = Validator.getInt(scan, "\n\nPlease enter a number from the selection to checkout.", 1,
+		int userInput = Validator.getInt(scan, "\n\nPlease enter a number from the selection to return: ", 1,
 				checkouts.size());
 		userInput -= 1;
 		Item selectedItem = checkouts.get(userInput);
 		selectedItem.setStatus(Status.ONSHELF);
 		selectedItem.setDueDate(null);
 		LibraryTextFile.writeFile(selectedItem, itemsMaster);
+		if (selectedItem.getType() == Type.BOOK) {
+		System.out.println(selectedItem.getTitle() + " by " + selectedItem.getAuthor() + " returned successfully!\n");
+		} else {
 		System.out.println(selectedItem.getTitle() + " returned successfully!\n");
 	}
-
+	}
+	
 	public static void placeHold(Scanner scan, List<Item> typeItems, List<Item> masterList) throws Exception {
 
-		int userInput = Validator.getInt(scan, "Please enter a number from the selection to place hold.", 1,
+		int userInput = Validator.getInt(scan, "Please enter a number from the selection to place hold: ", 1,
 				typeItems.size());
 		userInput -= 1;
 		Item selectedItem = typeItems.get(userInput);
 		if (selectedItem.getStatus().equals(Status.ONSHELF)) {
 			selectedItem.setStatus(Status.HOLD);
 			selectedItem.setDueDate(selectedItem.generateDueDate(selectedItem.getHolddays()));
-			System.out.println("Placed hold successful! This item will be held until " + selectedItem.getDueDate());
+			if (selectedItem.getType() == Type.BOOK) {
+				System.out.println("Hold placed successfully! " + selectedItem.getTitle() + " by " + selectedItem.getAuthor() + " will be held until " + selectedItem.getDueDate());
+				} else {
+			System.out.println("Hold placed successfully! " + selectedItem.getTitle() + " will be held until " + selectedItem.getDueDate());
+				}
 			LibraryTextFile.writeFile(selectedItem, masterList);
 		} else if (selectedItem.getStatus().equals(Status.CHECKEDOUT)) {
-			System.out.println("Sorry this item is already checked out. But it will be available after "
+			System.out.println("Sorry, " + selectedItem.getTitle() + " is already checked out. But it will be available after "
 					+ selectedItem.getDueDate());
 		}
 	}
 
+	public static void pickupHold(Scanner scan, List<Item> itemsMaster) throws Exception {
+
+		List<Item> holds = new ArrayList<>();
+		for (Item each : itemsMaster) {
+			if (each.getStatus().equals(Status.HOLD)) {
+				holds.add(each);
+			}
+		}
+		int i = 1;
+		for (Item holdItem : holds) {
+			System.out.println(i + ". " + holdItem);
+			i++;
+		}
+		int userInput = Validator.getInt(scan, "\n\nPlease enter a number from the selection of Holds waiting for pickup: ", 1,
+				holds.size());
+		userInput -= 1;
+		Item selectedItem = holds.get(userInput);
+		selectedItem.setStatus(Status.CHECKEDOUT);
+		selectedItem.setDueDate(selectedItem.generateDueDate(selectedItem.getCheckoutdays()));
+		LibraryTextFile.writeFile(selectedItem, itemsMaster);
+		if (selectedItem.getType() == Type.BOOK) {
+		System.out.println(selectedItem.getTitle() + " by " + selectedItem.getAuthor() + " checked out successfully!\n");
+		} else {
+		System.out.println(selectedItem.getTitle() + " checked out successfully!\n");
+	}
+	}
+	
 	public static void getUserChoice(Scanner scan, List<Item> typeItems, List<Item> itemsMaster) throws Exception {
 
 		String[] values = { "C", "H", "M" };

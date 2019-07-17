@@ -7,6 +7,8 @@ public abstract class Item {
 
 	private String title;
 
+	private String author;
+	
 	private Type type;
 
 	private Date dueDate;
@@ -28,6 +30,14 @@ public abstract class Item {
 	public int getCheckoutdays() {
 
 		return checkoutdays;
+	}
+
+	public String getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(String author) {
+		this.author = author;
 	}
 
 	public int getHolddays() {

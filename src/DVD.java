@@ -1,5 +1,6 @@
 public class DVD extends Item {
 
+	private String author = null;
 	private int checkoutdays = 3;
 
 	private int holddays = 3;
@@ -13,6 +14,11 @@ public class DVD extends Item {
 	public void setCheckoutdays(int checkoutdays) {
 
 		this.checkoutdays = checkoutdays;
+	}
+
+	public String getAuthor() {
+		super.getAuthor();
+		return author;
 	}
 
 	public int getHolddays() {
