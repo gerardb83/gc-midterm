@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class BooksApp {
+public class LibraryApp {
 	static Scanner scan = new Scanner(System.in);
 	public static DecimalFormat df = new DecimalFormat("00");
 	public static void main(String[] args) throws Exception {
