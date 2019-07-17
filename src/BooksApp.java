@@ -6,9 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class LibraryApp {
+public class BooksApp {
+
 	static Scanner scan = new Scanner(System.in);
+
 	public static DecimalFormat df = new DecimalFormat("00");
+
 	public static void main(String[] args) throws Exception {
 
 		Path path = Paths.get("items.txt");
@@ -16,8 +19,7 @@ public class LibraryApp {
 			Files.createFile(path);
 		}
 		int selection = 0;
-		List<Item> itemsMaster = LibraryTextFile.readFile();	
-	
+		List<Item> itemsMaster = LibraryTextFile.readFile();
 		do {
 			selection = displayMenu(itemsMaster);
 		} while (selection != 6);
@@ -25,6 +27,7 @@ public class LibraryApp {
 	}
 
 	private static int displayMenu(List<Item> itemsMaster) throws Exception {
+
 		System.out.println(
 				"1. Print Book List\n2. Print DVD List\n3. Search Books by Author \n4. Search Books by Title Keyword\n5. Return Items\n6. Quit");
 		int selection = Validator.getInt(scan, "Please make a selection (enter number): ", 1, 6);
@@ -43,29 +46,32 @@ public class LibraryApp {
 	}
 
 	public static List<Item> getBooks(List<Item> itemsMaster) throws Exception {
+
 		List<Item> books = new ArrayList<>();
 		for (Item each : itemsMaster) {
 			if (each.getType() == Type.BOOK) {
 				books.add(each);
 			}
 		}
-			return books;
-		}
-	
+		return books;
+	}
+
 	public static void displayBooks(List<Item> books, List<Item> itemsMaster) throws Exception {
+
 		System.out.println("\nBibliotheca Catalog");
 		System.out.println("================================================================\n");
 		System.out.printf("%-50s %-50s\n", "Title", "Author");
 		System.out.println("------------------------------------------------------------------");
 		int i = 1;
 		for (Item b : books) {
-				System.out.printf("%-1s %-45s\n", df.format(i) + ".", b);
-				i++;		
+			System.out.printf("%-1s %-45s\n", df.format(i) + ".", b);
+			i++;
 		}
-		checkout(scan, books, itemsMaster);
+		getUserChoice(scan, books, itemsMaster);
 	}
 
 	public static List<Item> getDVDS(List<Item> itemsMaster) throws Exception {
+
 		List<Item> dvds = new ArrayList<>();
 		for (Item each : itemsMaster) {
 			if (each.getType() == Type.DVD) {
@@ -74,8 +80,9 @@ public class LibraryApp {
 		}
 		return dvds;
 	}
-	
+
 	public static void displayDVDS(List<Item> dvds, List<Item> itemsMaster) throws Exception {
+
 		System.out.printf("%-50s\n", "Title");
 		System.out.println("------------------------------------------------------------------");
 		int i = 1;
@@ -83,85 +90,116 @@ public class LibraryApp {
 			System.out.printf("%-1s %-45s\n", df.format(i) + ".", b.getTitle());
 			i++;
 		}
-		checkout(scan, dvds, itemsMaster);
+		getUserChoice(scan, dvds, itemsMaster);
 	}
-	
+
 	public static void searchAuthors(Scanner scan, List<Item> itemsMaster) throws Exception {
+
 		int j = 0;
 		List<Item> search = new ArrayList<>();
 		System.out.println("Please enter an author's name to search.");
 		String userInput = scan.next();
-		for(int i = 0; i < itemsMaster.size(); i++) {
+		for (int i = 0; i < itemsMaster.size(); i++) {
 			Item item = itemsMaster.get(i);
 			if (item instanceof Book) {
-			String author = ((Book) item).getAuthor(); 
-			if(author.toLowerCase().contains(userInput.toLowerCase())) {
-				search.add(itemsMaster.get(i));
-				System.out.printf("%-15s %-15s\n", (j + 1) + ". ", search.get(j).getTitle());
-							j++;
-						}
+				String author = ((Book) item).getAuthor();
+				if (author.toLowerCase().contains(userInput.toLowerCase())) {
+					search.add(itemsMaster.get(i));
+					System.out.printf("%-15s %-15s\n", (j + 1) + ". ", search.get(j).getTitle());
+					j++;
+				}
 			}
 		}
-		checkout(scan, search, itemsMaster);
+		getUserChoice(scan, search, itemsMaster);
 	}
 
 	public static void searchTitles(Scanner scan, List<Item> itemsMaster) throws Exception {
+
 		int j = 0;
 		List<Item> search = new ArrayList<>();
 		System.out.println("Please enter a Title to search");
 		String userInput = scan.next();
-		for(int i = 0; i < itemsMaster.size(); i++) {
-				if (itemsMaster.get(i).getTitle().toLowerCase().contains(userInput.toLowerCase())) {
-					search.add(itemsMaster.get(i));
-					System.out.printf("%-15s %-15s\n", (j + 1) + ". ", search.get(j));
-					j++;
-				}
-		}
-		checkout(scan, search, itemsMaster);
-	}
-	
-	public static void checkout(Scanner scan, List<Item> typeItems, List<Item> masterList) throws Exception {
-		String[] values = { "y", "n" };
-		String answer = Validator.getStringMatching(scan, "Would you like to checkout? (y/n)", values);
-		if (answer.equalsIgnoreCase("Y")) {
-			int userInput = Validator.getInt(scan, "Please enter a number from the selection to checkout.", 1,
-					typeItems.size());
-			userInput -= 1;
-			Item selectedItem = typeItems.get(userInput);
-			if (selectedItem.getStatus().equals(Status.ONSHELF)) {
-				selectedItem.setStatus(Status.CHECKEDOUT);
-				selectedItem.setDueDate(selectedItem.generateDueDate());
-				System.out.println(selectedItem.getTitle());
-				System.out.println("Checkout successful! " + selectedItem.getDueDate());
-				LibraryTextFile.writeFile(selectedItem, masterList);
-			} else {
-				System.out.println("Sorry, " + selectedItem.getTitle() + " is " + selectedItem.getStatus());
+		for (int i = 0; i < itemsMaster.size(); i++) {
+			if (itemsMaster.get(i).getTitle().toLowerCase().contains(userInput.toLowerCase())) {
+				search.add(itemsMaster.get(i));
+				System.out.printf("%-15s %-15s\n", (j + 1) + ". ", search.get(j));
+				j++;
 			}
-		} 
+		}
+		getUserChoice(scan, search, itemsMaster);
 	}
-	
+
+	public static void checkout(Scanner scan, List<Item> typeItems, List<Item> masterList) throws Exception {
+
+		int userInput = Validator.getInt(scan, "Please enter a number from the selection to checkout.", 1,
+				typeItems.size());
+		userInput -= 1;
+		Item selectedItem = typeItems.get(userInput);
+		if (selectedItem.getStatus().equals(Status.ONSHELF)) {
+			selectedItem.setStatus(Status.CHECKEDOUT);
+			selectedItem.setDueDate(selectedItem.generateDueDate(selectedItem.getCheckoutdays()));
+			System.out.println(selectedItem.getTitle());
+			System.out.println("Checkout successful! " + selectedItem.getDueDate());
+			LibraryTextFile.writeFile(selectedItem, masterList);
+		} else {
+			System.out.println("Sorry, " + selectedItem.getTitle() + " is " + selectedItem.getStatus());
+		}
+	}
+
 	public static void returnItems(Scanner scan, List<Item> itemsMaster) throws Exception {
+
 		List<Item> checkouts = new ArrayList<>();
 		for (Item each : itemsMaster) {
-			if(each.getStatus().equals(Status.CHECKEDOUT)) {
+			if (each.getStatus().equals(Status.CHECKEDOUT)) {
 				checkouts.add(each);
 			}
 		}
-			int i = 1;
-			for(Item returnItem : checkouts) {
+		int i = 1;
+		for (Item returnItem : checkouts) {
 			System.out.println(i + ". " + returnItem);
 			i++;
-			}
-			int userInput = Validator.getInt(scan, "\n\nPlease enter a number from the selection to checkout.", 1,
-					checkouts.size());
-			userInput -= 1;
-			Item selectedItem = checkouts.get(userInput);
-			selectedItem.setStatus(Status.ONSHELF);
-			selectedItem.setDueDate(null);
-			LibraryTextFile.writeFile(selectedItem, itemsMaster);
-			System.out.println(selectedItem.getTitle() + " returned successfully!\n");
+		}
+		int userInput = Validator.getInt(scan, "\n\nPlease enter a number from the selection to checkout.", 1,
+				checkouts.size());
+		userInput -= 1;
+		Item selectedItem = checkouts.get(userInput);
+		selectedItem.setStatus(Status.ONSHELF);
+		selectedItem.setDueDate(null);
+		LibraryTextFile.writeFile(selectedItem, itemsMaster);
+		System.out.println(selectedItem.getTitle() + " returned successfully!\n");
 	}
-	
+
+	public static void placeHold(Scanner scan, List<Item> typeItems, List<Item> masterList) throws Exception {
+
+		int userInput = Validator.getInt(scan, "Please enter a number from the selection to place hold.", 1,
+				typeItems.size());
+		userInput -= 1;
+		Item selectedItem = typeItems.get(userInput);
+		if (selectedItem.getStatus().equals(Status.ONSHELF)) {
+			selectedItem.setStatus(Status.HOLD);
+			selectedItem.setDueDate(selectedItem.generateDueDate(selectedItem.getHolddays()));
+			System.out.println("Placed hold successful! This item will be held until " + selectedItem.getDueDate());
+			LibraryTextFile.writeFile(selectedItem, masterList);
+		} else if (selectedItem.getStatus().equals(Status.CHECKEDOUT)) {
+			System.out.println("Sorry this item is already checked out. But it will be available after "
+					+ selectedItem.getDueDate());
+		}
+	}
+
+	public static void getUserChoice(Scanner scan, List<Item> typeItems, List<Item> itemsMaster) throws Exception {
+
+		String[] values = { "C", "H", "M" };
+		String answer = Validator.getStringMatching(scan,
+				"\nEnter C to checkout or H to place hold or M to return to Main Menu?\n", values);
+		if (answer.equalsIgnoreCase("C")) {
+			checkout(scan, typeItems, itemsMaster);
+		} else if (answer.equalsIgnoreCase("H")) {
+			placeHold(scan, typeItems, itemsMaster);
+		} else
+			displayMenu(itemsMaster);
+	}
+
 	public static void displayBanner() {
+
 	}
 }

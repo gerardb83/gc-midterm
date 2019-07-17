@@ -1,6 +1,5 @@
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class LibraryTextFile {
@@ -39,7 +38,7 @@ public class LibraryTextFile {
 	}
 
 	private static String convertItemToLine(Item items) {
-				return items.toLine();
+		return items.toLine();
 
 	}
 	
@@ -68,9 +67,4 @@ public class LibraryTextFile {
 		}
 		linesHelper.rewriteFile(lines);
 	}
-	
-//	public static void appendToFile(DVD item) throws IOException {
-//		String line = convertItemToLine(item);
-//		linesHelper.appendToFile(line);
-//	}
 }
