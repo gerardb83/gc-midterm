@@ -1,11 +1,13 @@
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
-
+import java.text.SimpleDateFormat;  
+import java.util.Date;  
 public class LibraryTextFile {
 	private static FileLinesHelper linesHelper = new FileLinesHelper("items.txt");
 	
-	private static Item convertLineToItem(String line) {
+	private static Item convertLineToItem(String line) throws Exception {
 		String[] parts = line.split(",");
 		String tempType = parts[4].trim();
 		if (tempType.equals("BOOK")) {
@@ -20,6 +22,12 @@ public class LibraryTextFile {
 			} else if (tempStatus.equals("HOLD")) {
 				books.setStatus(Status.HOLD);
 			}
+			String tempDate = parts[3].trim();
+			if(!tempDate.equals("null")) {
+				SimpleDateFormat formDate = new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy"); 
+				Date newDate = formDate.parse(tempDate);
+				books.setDueDate(newDate);
+			}
 			return books;
 		} else if (tempType.equals("DVD")) {
 			DVD dvds = new DVD();
@@ -31,6 +39,12 @@ public class LibraryTextFile {
 				dvds.setStatus(Status.CHECKEDOUT);
 			} else if (tempStatus.equals("HOLD")) {
 				dvds.setStatus(Status.HOLD);
+			}
+			String tempDate = parts[3].trim();
+			if(!tempDate.equals("null")) {
+				SimpleDateFormat formDate = new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy"); 
+				Date newDate = formDate.parse(tempDate);
+				dvds.setDueDate(newDate);
 			}
 			return dvds;
 		}
@@ -51,7 +65,7 @@ public class LibraryTextFile {
 		} rewriteFile(itemsMaster);
 	}
 
-	public static List<Item> readFile() {
+	public static List<Item> readFile() throws Exception {
 		List<String> lines = linesHelper.readFile();
 		List<Item> items = new ArrayList<>(lines.size());
 		for (String line : lines) {
