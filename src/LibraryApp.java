@@ -64,10 +64,10 @@ public class LibraryApp {
 	}
 	
 	public static void displayBooks(List<Item> books, List<Item> itemsMaster) throws Exception {
-		makeBanner("Author", "");
+		makeBanner("Author", "Status");
 		int i = 1;
-		for (Item b : books) {
-			System.out.printf("%-1s %-45s\n", df.format(i) + ".", b);
+		for (Item each : books) {
+			System.out.printf("%-1s %-45s\n", df.format(i) + ". " + each, each.getStatus());
 			i++;
 		}
 		getUserChoice(scan, books, itemsMaster);
@@ -84,10 +84,10 @@ public class LibraryApp {
 	}
 
 	public static void displayDVDS(List<Item> dvds, List<Item> itemsMaster) throws Exception {
-		makeBanner("", "");
+		makeBanner("Status", "");
 		int i = 1;
-		for (Item b : dvds) {
-			System.out.printf("%-1s %-45s\n", df.format(i) + ".", b.getTitle());
+		for (Item each : dvds) {
+			System.out.printf("%-50s %-5s\n", df.format(i) + ". " + each.getTitle(), each.getStatus());
 			i++;
 		}
 		getUserChoice(scan, dvds, itemsMaster);
@@ -98,14 +98,14 @@ public class LibraryApp {
 		List<Item> search = new ArrayList<>();
 		System.out.println("Please enter an author's name to search.");
 		String userInput = scan.next();
-		makeBanner("Author", "");
+		makeBanner("Author", "Status");
 		for (int i = 0; i < itemsMaster.size(); i++) {
 			Item item = itemsMaster.get(i);
 			if (item instanceof Book) {
 				String author = item.getAuthor();
 				if (author.toLowerCase().contains(userInput.toLowerCase())) {
 					search.add(itemsMaster.get(i));
-					System.out.println((j + 1) + ". " + search.get(j));
+					System.out.println((j + 1) + ". " + search.get(j) + "\t" + search.get(j).getStatus());
 					j++;
 				}
 			}
@@ -118,11 +118,11 @@ public class LibraryApp {
 		List<Item> search = new ArrayList<>();
 		System.out.println("Please enter a Title to search");
 		String userInput = scan.next();
-		makeBanner("Author", "");
+		makeBanner("Author", "Status");
 		for (int i = 0; i < itemsMaster.size(); i++) {
 			if (itemsMaster.get(i).getTitle().toLowerCase().contains(userInput.toLowerCase())) {
 				search.add(itemsMaster.get(i));
-				System.out.println(df.format((j + 1)) + ". " + search.get(j));
+				System.out.println(df.format((j + 1)) + ". " + search.get(j) + search.get(j).getStatus());
 				j++;
 			}
 		}
@@ -158,7 +158,7 @@ public class LibraryApp {
 					"Checkout successful! " + selectedItem.getTitle() + " will be due on " + selectedItem.getDueDate() + "\n");
 			LibraryTextFile.writeFile(selectedItem, masterList);
 		} else {
-			System.out.println("Sorry, " + selectedItem.getTitle() + " is " + selectedItem.getStatus() + "\n");
+			System.out.println("Sorry, " + selectedItem.getTitle() + " is " + selectedItem.getStatus() + " until " + selectedItem.getDueDate() + "\n");
 		}
 	}
 

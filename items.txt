@@ -1,7 +1,7 @@
-Party Going,Henry Green,CHECKEDOUT,null,BOOK
+Party Going,Henry Green,ONSHELF,null,BOOK
 After Many a Summer,Aldous Huxley,ONSHELF,null,BOOK
-Finnegans Wake,James Joyce,CHECKEDOUT,null,BOOK
-At Swim-Two-Birds,Flann O'Brien,CHECKEDOUT,null,BOOK
+Finnegans Wake,James Joyce,ONSHELF,null,BOOK
+At Swim-Two-Birds,Flann O'Brien,ONSHELF,null,BOOK
 The Power and the Glory,Graham Greene,ONSHELF,null,BOOK
 For Whom the Bell Tolls,Ernest Hemingway,ONSHELF,null,BOOK
 Strangers and Brothers (to 1970),C. P. Snow,ONSHELF,null,BOOK
@@ -12,17 +12,17 @@ Brideshead Revisited,Evelyn Waugh,ONSHELF,null,BOOK
 Titus Groan,Mervyn Peake,ONSHELF,null,BOOK
 The Victim,Saul Bellow,ONSHELF,null,BOOK
 Under the Volcano,Malcolm Lowry,ONSHELF,null,BOOK
-The Heart of the Matter,Graham Greene,CHECKEDOUT,null,BOOK
+The Heart of the Matter,Graham Greene,CHECKEDOUT,Thu Aug 01 00:51:44 EDT 2019,BOOK
 Ape and Essence,Aldous Huxley,ONSHELF,null,BOOK
 The Naked and the Dead,Norman Mailer,ONSHELF,null,BOOK
 No Highway,Nevil Shute,ONSHELF,null,BOOK
 The Heat of the Day,Elizabeth Bowen,ONSHELF,null,BOOK
 Nineteen Eighty-Four,George Orwell,ONSHELF,null,BOOK
 The Body,William Sansom,ONSHELF,null,BOOK
-Scenes from Provincial Life,William Cooper,CHECKEDOUT,null,BOOK
+Scenes from Provincial Life,William Cooper,ONSHELF,null,BOOK
 The Disenchanted,Budd Schulberg,ONSHELF,null,BOOK
 A Dance to the Music of Time (to 1975),Anthony Powell,ONSHELF,null,BOOK
-The Catcher in the Rye,J. D. Salinger,CHECKEDOUT,null,BOOK
+The Catcher in the Rye,J. D. Salinger,ONSHELF,null,BOOK
 The Chronicle of Ancient Sunlight (to 1969),Henry Williamson,ONSHELF,null,BOOK
 The Caine Mutiny,Herman Wouk,ONSHELF,null,BOOK
 Invisible Man,Ralph Ellison,ONSHELF,null,BOOK
@@ -30,9 +30,9 @@ The Old Man and the Sea,Ernest Hemingway,ONSHELF,null,BOOK
 The Groves of Academe,Mary McCarthy,ONSHELF,null,BOOK
 Wise Blood,Flannery O'Connor,ONSHELF,null,BOOK
 Sword of Honour (to 1961),Evelyn Waugh,ONSHELF,null,BOOK
-The Long Goodbye,Raymond Chandler,CHECKEDOUT,null,BOOK
-Lucky Jim,Kingsley Amis,CHECKEDOUT,null,BOOK
-Room at the Top,John Braine,HOLD,null,BOOK
+The Long Goodbye,Raymond Chandler,ONSHELF,null,BOOK
+Lucky Jim,Kingsley Amis,ONSHELF,null,BOOK
+Room at the Top,John Braine,ONSHELF,null,BOOK
 The Alexandria Quartet (to 1960),Lawrence Durrell,ONSHELF,null,BOOK
 The London Novels (to 1960),Colin MacInnes,ONSHELF,null,BOOK
 The Assistant,Bernard Malamud,ONSHELF,null,BOOK
@@ -41,18 +41,18 @@ Saturday Night and Sunday Morning,Alan Sillitoe,ONSHELF,null,BOOK
 The Once and Future King,T. H. White,ONSHELF,null,BOOK
 The Mansion,William Faulkner,ONSHELF,null,BOOK
 Goldfinger,Ian Fleming,ONSHELF,null,BOOK
-Facial Justice,L. P. Hartley,CHECKEDOUT,null,BOOK
+Facial Justice,L. P. Hartley,ONSHELF,null,BOOK
 The Balkans Trilogy (to 1965),Olivia Manning,ONSHELF,null,BOOK
-The Mighty and Their Fall,Ivy Compton-Burnett,CHECKEDOUT,null,BOOK
+The Mighty and Their Fall,Ivy Compton-Burnett,ONSHELF,null,BOOK
 Catch-22,Joseph Heller,ONSHELF,null,BOOK
 The Fox in the Attic,Richard Hughes,ONSHELF,null,BOOK
 Riders in the Chariot,Patrick White,ONSHELF,null,BOOK
-The Old Men at the Zoo,Angus Wilson,CHECKEDOUT,null,BOOK
+The Old Men at the Zoo,Angus Wilson,ONSHELF,null,BOOK
 Another Country,James Baldwin,ONSHELF,null,BOOK
 An Error of Judgment,Pamela Hansford Johnson,ONSHELF,null,BOOK
-Island,Aldous Huxley,CHECKEDOUT,null,BOOK
+Island,Aldous Huxley,ONSHELF,null,BOOK
 The Golden Notebook,Doris Lessing,ONSHELF,null,BOOK
-Pale Fire,Vladimir Nabokov,CHECKEDOUT,null,BOOK
+Pale Fire,Vladimir Nabokov,ONSHELF,null,BOOK
 The Girls of Slender Means,Muriel Spark,ONSHELF,null,BOOK
 The Spire,William Golding,ONSHELF,null,BOOK
 Heartland,Wilson Harris,ONSHELF,null,BOOK
@@ -60,7 +60,7 @@ A Single Man,Christopher Isherwood,ONSHELF,null,BOOK
 The Defence,Vladimir Nabokov,ONSHELF,null,BOOK
 Late Call,Angus Wilson,ONSHELF,null,BOOK
 The Lockwood Concern,John O'Hara,ONSHELF,null,BOOK
-The Mandelbaum Gate,Muriel Spark,CHECKEDOUT,null,BOOK
+The Mandelbaum Gate,Muriel Spark,ONSHELF,null,BOOK
 A Man of the People,Chinua Achebe,ONSHELF,null,BOOK
 The Anti-Death League,Kingsley Amis,ONSHELF,null,BOOK
 Giles Goat-Boy,John Barth,ONSHELF,null,BOOK
@@ -74,29 +74,29 @@ The French Lieutenant's Woman,John Fowles,ONSHELF,null,BOOK
 Portnoy's Complaint,Philip Roth,ONSHELF,null,BOOK
 Bomber,Len Deighton,ONSHELF,null,BOOK
 Sweet Dreams,Michael Frayn,ONSHELF,null,BOOK
-Gravity's Rainbow,Thomas Pynchon,CHECKEDOUT,null,BOOK
-Humboldt's Gift,Saul Bellow,CHECKEDOUT,null,BOOK
+Gravity's Rainbow,Thomas Pynchon,ONSHELF,null,BOOK
+Humboldt's Gift,Saul Bellow,ONSHELF,null,BOOK
 The History Man,Malcolm Bradbury,ONSHELF,null,BOOK
 The Doctor's Wife,Brian Moore,ONSHELF,null,BOOK
 Falstaff,Robert Nye,ONSHELF,null,BOOK
 How to Save Your Own Life,Erica Jong,ONSHELF,null,BOOK
-Farewell Companions,James Plunkett,CHECKEDOUT,null,BOOK
+Farewell Companions,James Plunkett,ONSHELF,null,BOOK
 Staying On,Paul Scott,ONSHELF,null,BOOK
 The Coup,John Updike,ONSHELF,null,BOOK
 The Unlimited Dream Company,J. G. Ballard,ONSHELF,null,BOOK
 Dubin's Lives,Bernard Malamud,ONSHELF,null,BOOK
 A Bend in the River,V. S. Naipaul,ONSHELF,null,BOOK
 Sophie's Choice,William Stryon,ONSHELF,null,BOOK
-Life in the West,Brian Aldiss,CHECKEDOUT,null,BOOK
+Life in the West,Brian Aldiss,ONSHELF,null,BOOK
 Riddley Walker,Russell Hoban,ONSHELF,null,BOOK
 How Far Can You Go?,David Lodge,ONSHELF,null,BOOK
 A Confederacy of Dunces,John Kennedy Toole,ONSHELF,null,BOOK
-Lanark,Alasdair Gray,ONSHELF,null,BOOK
+Lanark,Alasdair Gray,HOLD,Sun Jul 21 00:30:49 EDT 2019,BOOK
 Darconville's Cat,Alexander Theroux,ONSHELF,null,BOOK
-The Mosquito Coast,Paul Theroux,CHECKEDOUT,null,BOOK
-Creation,Gore Vidal,CHECKEDOUT,null,BOOK
-The Rebel Angels,Robertson Davies,CHECKEDOUT,null,BOOK
-Ancient Evenings,Norman Mailer,CHECKEDOUT,Wed Jul 31 22:58:56 EDT 2019,BOOK
+The Mosquito Coast,Paul Theroux,ONSHELF,null,BOOK
+Creation,Gore Vidal,ONSHELF,null,BOOK
+The Rebel Angels,Robertson Davies,HOLD,Sun Jul 21 00:46:23 EDT 2019,BOOK
+Ancient Evenings,Norman Mailer,ONSHELF,null,BOOK
 It's a Wonderful Life (1946),null,ONSHELF,null,DVD
 To Kill a Mockingbird (1962),null,ONSHELF,null,DVD
 Schindler's List (1993),null,ONSHELF,null,DVD
@@ -130,7 +130,7 @@ Lawrence of Arabia (1962),null,ONSHELF,null,DVD
 Glory (1989),null,ONSHELF,null,DVD
 Casablanca (1942),null,ONSHELF,null,DVD
 City Lights (1931),null,ONSHELF,null,DVD
-All the President's Men (1976),null,CHECKEDOUT,null,DVD
+All the President's Men (1976),null,ONSHELF,null,DVD
 Guess Who's Coming to Dinner (1967),null,ONSHELF,null,DVD
 On the Waterfront (1954),null,ONSHELF,null,DVD
 Forrest Gump (1994),null,ONSHELF,null,DVD
@@ -154,7 +154,7 @@ Rudy (1993),null,ONSHELF,null,DVD
 The Defiant Ones (1958),null,ONSHELF,null,DVD
 Ben-Hur (1959),null,ONSHELF,null,DVD
 Sergeant York (1941),null,ONSHELF,null,DVD
-Close Encounters of the Third Kind (1977),null,HOLD,null,DVD
+Close Encounters of the Third Kind (1977),null,CHECKEDOUT,Sun Jul 21 00:30:26 EDT 2019,DVD
 Dances with Wolves (1990),null,ONSHELF,null,DVD
 The Killing Fields (1984),null,ONSHELF,null,DVD
 Sounder (1972),null,ONSHELF,null,DVD
@@ -162,7 +162,7 @@ Braveheart (1995),null,ONSHELF,null,DVD
 Rain Man (1988),null,ONSHELF,null,DVD
 The Black Stallion (1979),null,ONSHELF,null,DVD
 A Raisin in the Sun (1961),null,ONSHELF,null,DVD
-Silkwood (1983),null,HOLD,null,DVD
+Silkwood (1983),null,ONSHELF,null,DVD
 The Day the Earth Stood Still (1951),null,ONSHELF,null,DVD
 An Officer and a Gentleman (1982),null,ONSHELF,null,DVD
 The Spirit of St. Louis (1957),null,ONSHELF,null,DVD
