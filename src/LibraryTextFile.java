@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.text.SimpleDateFormat;  
-import java.util.Date;  
+
 public class LibraryTextFile {
 	private static FileLinesHelper linesHelper = new FileLinesHelper("items.txt");
 	

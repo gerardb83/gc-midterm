@@ -39,6 +39,6 @@ public class DVD extends Item {
 
 	@Override
 	public String toString() {
-		return String.format("%-45s", getTitle());
+		return String.format("%-76s", getTitle());
 	};
 }

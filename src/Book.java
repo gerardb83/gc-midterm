@@ -43,6 +43,6 @@ public class Book extends Item {
 	}
 
 	public String toString() {
-		return String.format("%-45s %-45s", getTitle(), getAuthor());
+		return String.format("%-45s %-30s", getTitle(), getAuthor());
 	}
 }

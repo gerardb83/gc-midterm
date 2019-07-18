@@ -56,15 +56,15 @@ public class LibraryApp {
 		return books;
 	}
 
-	public static void makeBanner(String author) {
+	public static void makeBanner(String author, String dueDate) {
 		System.out.println("\nBibliotheca Catalog");
-		System.out.println("================================================================\n");
-		System.out.printf("%-50s %-50s\n", "Title", author);
-		System.out.println("------------------------------------------------------------------");
+		System.out.println("============================================================================================================\n");
+		System.out.printf("%-50s %-30s %-20s\n", "Title", author, dueDate);
+		System.out.println("-----------------------------------------------------------------------------------------------------------");
 	}
 	
 	public static void displayBooks(List<Item> books, List<Item> itemsMaster) throws Exception {
-		makeBanner("Author");
+		makeBanner("Author", "");
 		int i = 1;
 		for (Item b : books) {
 			System.out.printf("%-1s %-45s\n", df.format(i) + ".", b);
@@ -84,7 +84,7 @@ public class LibraryApp {
 	}
 
 	public static void displayDVDS(List<Item> dvds, List<Item> itemsMaster) throws Exception {
-		makeBanner("");
+		makeBanner("", "");
 		int i = 1;
 		for (Item b : dvds) {
 			System.out.printf("%-1s %-45s\n", df.format(i) + ".", b.getTitle());
@@ -98,7 +98,7 @@ public class LibraryApp {
 		List<Item> search = new ArrayList<>();
 		System.out.println("Please enter an author's name to search.");
 		String userInput = scan.next();
-		makeBanner("Author");
+		makeBanner("Author", "");
 		for (int i = 0; i < itemsMaster.size(); i++) {
 			Item item = itemsMaster.get(i);
 			if (item instanceof Book) {
@@ -118,7 +118,7 @@ public class LibraryApp {
 		List<Item> search = new ArrayList<>();
 		System.out.println("Please enter a Title to search");
 		String userInput = scan.next();
-		makeBanner("Author");
+		makeBanner("Author", "");
 		for (int i = 0; i < itemsMaster.size(); i++) {
 			if (itemsMaster.get(i).getTitle().toLowerCase().contains(userInput.toLowerCase())) {
 				search.add(itemsMaster.get(i));
@@ -163,7 +163,7 @@ public class LibraryApp {
 	}
 
 	public static void returnItems(Scanner scan, List<Item> itemsMaster) throws Exception {
-		makeBanner("Author");
+		makeBanner("Author", "Due Date");
 		List<Item> checkouts = new ArrayList<>();
 		for (Item each : itemsMaster) {
 			if (each.getStatus().equals(Status.CHECKEDOUT)) {
@@ -213,7 +213,7 @@ public class LibraryApp {
 	}
 
 	public static void pickupHold(Scanner scan, List<Item> itemsMaster) throws Exception {
-		makeBanner("Author");
+		makeBanner("Author", "Will be Held Until");
 		List<Item> holds = new ArrayList<>();
 		for (Item each : itemsMaster) {
 			if (each.getStatus().equals(Status.HOLD)) {
