@@ -1,10 +1,7 @@
 import java.util.Scanner;
 
 public class Validator {
-
-	/**
-	 * Get any valid integer.
-	 */
+	
 	public static int getInt(Scanner scnr, String prompt) {
 
 		// This approach use "hasNext" look ahead.
@@ -19,11 +16,7 @@ public class Validator {
 		return result;
 	}
 
-	/**
-	 * Get any valid positive integer.
-	 */
 	public static int getPositiveInt(Scanner scnr, String prompt) {
-
 		int result = -1;
 		// This approach use "hasNext" look ahead.
 		System.out.print(prompt);
@@ -37,7 +30,6 @@ public class Validator {
 	}
 
 	public static int getPositiveIntForArray(Scanner scnr, String prompt) {
-
 		int result = -1;
 		// This approach use "hasNext" look ahead.
 		System.out.print(prompt);
@@ -50,12 +42,7 @@ public class Validator {
 		return result;
 	}
 
-	/**
-	 * Get any valid double.
-	 */
 	public static double getDouble(Scanner scnr, String prompt) {
-
-		// This approach use "hasNext" look ahead.
 		boolean isValid = false;
 		do {
 			System.out.print(prompt);
@@ -70,21 +57,12 @@ public class Validator {
 		return number;
 	}
 
-	/**
-	 * Get any string.
-	 */
 	public static String getString(Scanner scnr, String prompt) {
-
-		// This approach uses exception handling.
 		System.out.print(prompt);
 		return scnr.nextLine();
 	}
 
-	/**
-	 * Get any valid integer between min and max.
-	 */
 	public static int getInt(Scanner scnr, String prompt, int min, int max) {
-
 		boolean isValid = false;
 		int number;
 		do {
@@ -102,9 +80,6 @@ public class Validator {
 		return number;
 	}
 
-	/**
-	 * Get any valid double between min and max.
-	 */
 	public static double getDouble(Scanner scnr, String prompt, double min, double max) {
 
 		boolean isValid = false;
@@ -124,9 +99,6 @@ public class Validator {
 		return number;
 	}
 
-	/**
-	 * Get a string of input from the user that must match the given regex.
-	 */
 	public static String getStringMatchingRegex(Scanner scnr, String prompt, String regex) {
 
 		boolean isValid = false;
@@ -162,45 +134,7 @@ public class Validator {
 		} while (!isValid);
 		return input;
 	}
-	/*
-	 * public static String getStringMatching(Scanner scnr, String prompt,
-	 * List<Books> validValues) {
-	 * 
-	 * System.out.print(prompt); scnr.nextLine(); // clear the scanner String
-	 * tempString; String answer = ""; do { while (!scnr.hasNextLine()) {
-	 * System.out.println("This is not a valid entry."); System.out.println(prompt);
-	 * } tempString = scnr.nextLine().toLowerCase().replaceAll("\\s+", " ").trim();
-	 * for (int j = 0; j < validValues.size(); j++) { if
-	 * (tempString.equalsIgnoreCase(validValues.get(j).getAuthor())) { answer =
-	 * tempString; break; } else {
-	 * System.out.print("Sorry, we don't have books by that author: "); break; } } }
-	 * while (answer.equals("")); return answer; }
-	 */
-	/*
-	 * public static String getStringMatching(Scanner scnr, String prompt,
-	 * List<Book> validValues) {
-	 * 
-	 * boolean isValid = false; String input = ""; do { System.out.print(prompt);
-	 * scnr.nextLine(); input = scnr.nextLine(); for (int i = 0; i <
-	 * validValues.size(); i++) { if
-	 * (input.equalsIgnoreCase(validValues.get(i).getAuthor())) { isValid = true;
-	 * break; } } if (!isValid) {
-	 * System.out.println("Sorry, we don't have a Book by that Author."); } } while
-	 * (!isValid); return input; }
-	 */
 
-	/*
-	 * public static String getStringMatchingTitle(Scanner scnr, String prompt,
-	 * List<Book> validValues) {
-	 * 
-	 * boolean isValid = false; String input = ""; do { System.out.print(prompt);
-	 * scnr.nextLine(); input = scnr.nextLine(); for (int i = 0; i <
-	 * validValues.size(); i++) { if
-	 * (input.equalsIgnoreCase(validValues.get(i).getTitle())) { isValid = true;
-	 * break; } } if (!isValid) {
-	 * System.out.println("Sorry, we don't have a Book by that Author."); } } while
-	 * (!isValid); return input; }
-	 */
 	public static int getIntMatching(Scanner scnr, String prompt, int[] validValues) {
 
 		boolean isValid = false;

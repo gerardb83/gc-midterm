@@ -22,7 +22,7 @@ The Body,William Sansom,ONSHELF,null,BOOK
 Scenes from Provincial Life,William Cooper,CHECKEDOUT,null,BOOK
 The Disenchanted,Budd Schulberg,ONSHELF,null,BOOK
 A Dance to the Music of Time (to 1975),Anthony Powell,ONSHELF,null,BOOK
-The Catcher in the Rye,J. D. Salinger,ONSHELF,null,BOOK
+The Catcher in the Rye,J. D. Salinger,CHECKEDOUT,Wed Jul 31 21:55:36 EDT 2019,BOOK
 The Chronicle of Ancient Sunlight (to 1969),Henry Williamson,ONSHELF,null,BOOK
 The Caine Mutiny,Herman Wouk,ONSHELF,null,BOOK
 Invisible Man,Ralph Ellison,ONSHELF,null,BOOK
@@ -31,7 +31,7 @@ The Groves of Academe,Mary McCarthy,ONSHELF,null,BOOK
 Wise Blood,Flannery O'Connor,ONSHELF,null,BOOK
 Sword of Honour (to 1961),Evelyn Waugh,ONSHELF,null,BOOK
 The Long Goodbye,Raymond Chandler,CHECKEDOUT,null,BOOK
-Lucky Jim,Kingsley Amis,ONSHELF,null,BOOK
+Lucky Jim,Kingsley Amis,CHECKEDOUT,null,BOOK
 Room at the Top,John Braine,HOLD,null,BOOK
 The Alexandria Quartet (to 1960),Lawrence Durrell,ONSHELF,null,BOOK
 The London Novels (to 1960),Colin MacInnes,ONSHELF,null,BOOK
@@ -60,7 +60,7 @@ A Single Man,Christopher Isherwood,ONSHELF,null,BOOK
 The Defence,Vladimir Nabokov,ONSHELF,null,BOOK
 Late Call,Angus Wilson,ONSHELF,null,BOOK
 The Lockwood Concern,John O'Hara,ONSHELF,null,BOOK
-The Mandelbaum Gate,Muriel Spark,ONSHELF,null,BOOK
+The Mandelbaum Gate,Muriel Spark,CHECKEDOUT,null,BOOK
 A Man of the People,Chinua Achebe,ONSHELF,null,BOOK
 The Anti-Death League,Kingsley Amis,ONSHELF,null,BOOK
 Giles Goat-Boy,John Barth,ONSHELF,null,BOOK
@@ -96,104 +96,104 @@ Darconville's Cat,Alexander Theroux,ONSHELF,null,BOOK
 The Mosquito Coast,Paul Theroux,CHECKEDOUT,null,BOOK
 Creation,Gore Vidal,CHECKEDOUT,null,BOOK
 The Rebel Angels,Robertson Davies,CHECKEDOUT,null,BOOK
-Ancient Evenings,Norman Mailer,CHECKEDOUT,Wed Jul 31 16:56:17 EDT 2019,BOOK
+Ancient Evenings,Norman Mailer,CHECKEDOUT,null,BOOK
 It's a Wonderful Life (1946),null,ONSHELF,null,DVD
- To Kill a Mockingbird (1962),null,ONSHELF,null,DVD
- Schindler's List (1993),null,ONSHELF,null,DVD
- Rocky (1976),null,ONSHELF,null,DVD
- Mr. Smith Goes to Washington (1939),null,ONSHELF,null,DVD
- E.T. The Extra-Terrestrial (1982),null,ONSHELF,null,DVD
- The Grapes of Wrath (1940),null,ONSHELF,null,DVD
- Breaking Away (1979),null,ONSHELF,null,DVD
- Miracle on 34th Street (1947),null,ONSHELF,null,DVD
- Saving Private Ryan (1998),null,ONSHELF,null,DVD
- The Best Years of Our Lives (1946),null,ONSHELF,null,DVD
- Apollo 13 (1995),null,ONSHELF,null,DVD
- Hoosiers (1986),null,ONSHELF,null,DVD
- The Bridge on the River Kwai (1957),null,ONSHELF,null,DVD
- The Miracle Worker (1962),null,ONSHELF,null,DVD
- Norma Rae (1979),null,ONSHELF,null,DVD
+To Kill a Mockingbird (1962),null,ONSHELF,null,DVD
+Schindler's List (1993),null,ONSHELF,null,DVD
+Rocky (1976),null,ONSHELF,null,DVD
+Mr. Smith Goes to Washington (1939),null,ONSHELF,null,DVD
+E.T. The Extra-Terrestrial (1982),null,ONSHELF,null,DVD
+The Grapes of Wrath (1940),null,ONSHELF,null,DVD
+Breaking Away (1979),null,ONSHELF,null,DVD
+Miracle on 34th Street (1947),null,ONSHELF,null,DVD
+Saving Private Ryan (1998),null,ONSHELF,null,DVD
+The Best Years of Our Lives (1946),null,ONSHELF,null,DVD
+Apollo 13 (1995),null,ONSHELF,null,DVD
+Hoosiers (1986),null,ONSHELF,null,DVD
+The Bridge on the River Kwai (1957),null,ONSHELF,null,DVD
+The Miracle Worker (1962),null,ONSHELF,null,DVD
+Norma Rae (1979),null,ONSHELF,null,DVD
 One Flew Over the Cuckoo's Nest (1975),null,ONSHELF,null,DVD
- The Diary of Anne Frank (1959),null,ONSHELF,null,DVD
- The Right Stuff (1983),null,ONSHELF,null,DVD
- Philadelphia (1993),null,ONSHELF,null,DVD
- In the Heat of the Night (1967),null,ONSHELF,null,DVD
- The Pride of the Yankees (1942),null,ONSHELF,null,DVD
- The Shawshank Redemption (1994),null,ONSHELF,null,DVD
- National Velvet (1944),null,ONSHELF,null,DVD
- Sullivan's Travels (1941),null,ONSHELF,null,DVD
- The Wizard of Oz (1939),null,ONSHELF,null,DVD
- High Noon (1952),null,ONSHELF,null,DVD
- Field of Dreams (1989),null,ONSHELF,null,DVD
- Gandhi (1982),null,ONSHELF,null,DVD
- Lawrence of Arabia (1962),null,ONSHELF,null,DVD
- Glory (1989),null,ONSHELF,null,DVD
- Casablanca (1942),null,ONSHELF,null,DVD
- City Lights (1931),null,ONSHELF,null,DVD
- All the President's Men (1976),null,ONSHELF,null,DVD
- Guess Who's Coming to Dinner (1967),null,ONSHELF,null,DVD
- On the Waterfront (1954),null,ONSHELF,null,DVD
- Forrest Gump (1994),null,ONSHELF,null,DVD
- Pinocchio (1940),null,ONSHELF,null,DVD
- Star Wars (1977),null,ONSHELF,null,DVD
- Mrs. Miniver (1942),null,ONSHELF,null,DVD
- The Sound of Music (1965),null,ONSHELF,null,DVD
- 12 Angry Men (1957),null,ONSHELF,null,DVD
- Gone With the Wind (1939),null,ONSHELF,null,DVD
- Spartacus (1960),null,ONSHELF,null,DVD
- On Golden Pond (1981),null,ONSHELF,null,DVD
- Lilies of the Field (1963),null,ONSHELF,null,DVD
- 2001: A Space Odyssey (1968),null,ONSHELF,null,DVD
- The African Queen (1951),null,ONSHELF,null,DVD
- Meet John Doe (1941),null,ONSHELF,null,DVD
- Seabiscuit (2003),null,ONSHELF,null,DVD
- The Color Purple (1985),null,ONSHELF,null,DVD
- Dead Poets Society (1989),null,ONSHELF,null,DVD
- Shane (1953),null,ONSHELF,null,DVD
- Rudy (1993),null,ONSHELF,null,DVD
- The Defiant Ones (1958),null,ONSHELF,null,DVD
- Ben-Hur (1959),null,ONSHELF,null,DVD
- Sergeant York (1941),null,ONSHELF,null,DVD
- Close Encounters of the Third Kind (1977),null,HOLD,null,DVD
- Dances with Wolves (1990),null,ONSHELF,null,DVD
- The Killing Fields (1984),null,ONSHELF,null,DVD
- Sounder (1972),null,ONSHELF,null,DVD
- Braveheart (1995),null,ONSHELF,null,DVD
- Rain Man (1988),null,ONSHELF,null,DVD
- The Black Stallion (1979),null,ONSHELF,null,DVD
- A Raisin in the Sun (1961),null,ONSHELF,null,DVD
- Silkwood (1983),null,HOLD,null,DVD
- The Day the Earth Stood Still (1951),null,ONSHELF,null,DVD
- An Officer and a Gentleman (1982),null,ONSHELF,null,DVD
- The Spirit of St. Louis (1957),null,ONSHELF,null,DVD
- Coal Miner's Daughter (1980),null,ONSHELF,null,DVD
- Cool Hand Luke (1967),null,ONSHELF,null,DVD
- Dark Victory (1939),null,ONSHELF,null,DVD
- Erin Brockovich (2000),null,ONSHELF,null,DVD
- Gunga Din (1939),null,ONSHELF,null,DVD
- The Verdict (1982),null,ONSHELF,null,DVD
- Birdman of Alcatraz (1962),null,ONSHELF,null,DVD
- Driving Miss Daisy (1989),null,ONSHELF,null,DVD
- Thelma and Louise (1991),null,ONSHELF,null,DVD
- The Ten Commandments (1956),null,ONSHELF,null,DVD
- Babe (1995),null,ONSHELF,null,DVD
- Boys Town (1938),null,ONSHELF,null,DVD
- Fiddler on the Roof (1971),null,ONSHELF,null,DVD
- Mr. Deeds Goes to Town (1936),null,ONSHELF,null,DVD
- Serpico (1973),null,ONSHELF,null,DVD
- What's Love Got to Do with It (1993),null,ONSHELF,null,DVD
- Stand and Deliver (1988),null,ONSHELF,null,DVD
- Working Girl (1988),null,ONSHELF,null,DVD
- Yankee Doodle Dandy (1942),null,ONSHELF,null,DVD
- Harold and Maude (1972),null,ONSHELF,null,DVD
- Hotel Rwanda (2004),null,ONSHELF,null,DVD
- The Paper Chase (1973),null,ONSHELF,null,DVD
- Fame (1980),null,ONSHELF,null,DVD
- A Beautiful Mind (2001),null,CHECKEDOUT,null,DVD
- Captains Courageous (1937),null,ONSHELF,null,DVD
- Places in the Heart (1984),null,ONSHELF,null,DVD
- Searching for Bobby Fischer (1993),null,ONSHELF,null,DVD
- Madame Curie (1943),null,ONSHELF,null,DVD
- The Karate Kid (1984),null,ONSHELF,null,DVD
- Ray (2004),null,ONSHELF,null,DVD
- Chariots of Fire (1981),null,ONSHELF,null,DVD
+The Diary of Anne Frank (1959),null,ONSHELF,null,DVD
+The Right Stuff (1983),null,ONSHELF,null,DVD
+Philadelphia (1993),null,ONSHELF,null,DVD
+In the Heat of the Night (1967),null,ONSHELF,null,DVD
+The Pride of the Yankees (1942),null,ONSHELF,null,DVD
+The Shawshank Redemption (1994),null,ONSHELF,null,DVD
+National Velvet (1944),null,ONSHELF,null,DVD
+Sullivan's Travels (1941),null,ONSHELF,null,DVD
+The Wizard of Oz (1939),null,ONSHELF,null,DVD
+High Noon (1952),null,ONSHELF,null,DVD
+Field of Dreams (1989),null,ONSHELF,null,DVD
+Gandhi (1982),null,ONSHELF,null,DVD
+Lawrence of Arabia (1962),null,ONSHELF,null,DVD
+Glory (1989),null,ONSHELF,null,DVD
+Casablanca (1942),null,ONSHELF,null,DVD
+City Lights (1931),null,ONSHELF,null,DVD
+All the President's Men (1976),null,CHECKEDOUT,null,DVD
+Guess Who's Coming to Dinner (1967),null,ONSHELF,null,DVD
+On the Waterfront (1954),null,ONSHELF,null,DVD
+Forrest Gump (1994),null,ONSHELF,null,DVD
+Pinocchio (1940),null,ONSHELF,null,DVD
+Star Wars (1977),null,ONSHELF,null,DVD
+Mrs. Miniver (1942),null,ONSHELF,null,DVD
+The Sound of Music (1965),null,ONSHELF,null,DVD
+12 Angry Men (1957),null,ONSHELF,null,DVD
+Gone With the Wind (1939),null,ONSHELF,null,DVD
+Spartacus (1960),null,ONSHELF,null,DVD
+On Golden Pond (1981),null,ONSHELF,null,DVD
+Lilies of the Field (1963),null,ONSHELF,null,DVD
+2001: A Space Odyssey (1968),null,ONSHELF,null,DVD
+The African Queen (1951),null,ONSHELF,null,DVD
+Meet John Doe (1941),null,ONSHELF,null,DVD
+Seabiscuit (2003),null,ONSHELF,null,DVD
+The Color Purple (1985),null,ONSHELF,null,DVD
+Dead Poets Society (1989),null,ONSHELF,null,DVD
+Shane (1953),null,ONSHELF,null,DVD
+Rudy (1993),null,ONSHELF,null,DVD
+The Defiant Ones (1958),null,ONSHELF,null,DVD
+Ben-Hur (1959),null,ONSHELF,null,DVD
+Sergeant York (1941),null,ONSHELF,null,DVD
+Close Encounters of the Third Kind (1977),null,HOLD,null,DVD
+Dances with Wolves (1990),null,ONSHELF,null,DVD
+The Killing Fields (1984),null,ONSHELF,null,DVD
+Sounder (1972),null,ONSHELF,null,DVD
+Braveheart (1995),null,ONSHELF,null,DVD
+Rain Man (1988),null,ONSHELF,null,DVD
+The Black Stallion (1979),null,ONSHELF,null,DVD
+A Raisin in the Sun (1961),null,ONSHELF,null,DVD
+Silkwood (1983),null,HOLD,null,DVD
+The Day the Earth Stood Still (1951),null,ONSHELF,null,DVD
+An Officer and a Gentleman (1982),null,ONSHELF,null,DVD
+The Spirit of St. Louis (1957),null,ONSHELF,null,DVD
+Coal Miner's Daughter (1980),null,ONSHELF,null,DVD
+Cool Hand Luke (1967),null,ONSHELF,null,DVD
+Dark Victory (1939),null,ONSHELF,null,DVD
+Erin Brockovich (2000),null,ONSHELF,null,DVD
+Gunga Din (1939),null,ONSHELF,null,DVD
+The Verdict (1982),null,ONSHELF,null,DVD
+Birdman of Alcatraz (1962),null,ONSHELF,null,DVD
+Driving Miss Daisy (1989),null,ONSHELF,null,DVD
+Thelma and Louise (1991),null,ONSHELF,null,DVD
+The Ten Commandments (1956),null,ONSHELF,null,DVD
+Babe (1995),null,ONSHELF,null,DVD
+Boys Town (1938),null,ONSHELF,null,DVD
+Fiddler on the Roof (1971),null,ONSHELF,null,DVD
+Mr. Deeds Goes to Town (1936),null,ONSHELF,null,DVD
+Serpico (1973),null,ONSHELF,null,DVD
+What's Love Got to Do with It (1993),null,ONSHELF,null,DVD
+Stand and Deliver (1988),null,ONSHELF,null,DVD
+Working Girl (1988),null,ONSHELF,null,DVD
+Yankee Doodle Dandy (1942),null,ONSHELF,null,DVD
+Harold and Maude (1972),null,ONSHELF,null,DVD
+Hotel Rwanda (2004),null,ONSHELF,null,DVD
+The Paper Chase (1973),null,ONSHELF,null,DVD
+Fame (1980),null,ONSHELF,null,DVD
+A Beautiful Mind (2001),null,CHECKEDOUT,null,DVD
+Captains Courageous (1937),null,ONSHELF,null,DVD
+Places in the Heart (1984),null,ONSHELF,null,DVD
+Searching for Bobby Fischer (1993),null,CHECKEDOUT,null,DVD
+Madame Curie (1943),null,ONSHELF,null,DVD
+The Karate Kid (1984),null,ONSHELF,null,DVD
+Ray (2004),null,ONSHELF,null,DVD
+Chariots of Fire (1981),null,ONSHELF,null,DVD
