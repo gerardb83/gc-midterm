@@ -172,7 +172,7 @@ public class LibraryApp {
 		}
 		int i = 1;
 		for (Item returnItem : checkouts) {
-			System.out.println(df.format(i) + ". " + returnItem);
+			System.out.println(df.format(i) + ". " + returnItem + " " + returnItem.getDueDate());
 			i++;
 		}
 		int userInput = Validator.getInt(scan, "\n\nPlease enter a number from the selection to return: ", 1,
@@ -222,7 +222,7 @@ public class LibraryApp {
 		}
 		int i = 1;
 		for (Item holdItem : holds) {
-			System.out.println(i + ". " + holdItem);
+			System.out.println(i + ". " + holdItem + " " + holdItem.getDueDate());
 			i++;
 		}
 		int userInput = Validator.getInt(scan,

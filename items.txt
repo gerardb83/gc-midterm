@@ -1,6 +1,6 @@
 Party Going,Henry Green,CHECKEDOUT,null,BOOK
 After Many a Summer,Aldous Huxley,ONSHELF,null,BOOK
-Finnegans Wake,James Joyce,ONSHELF,null,BOOK
+Finnegans Wake,James Joyce,CHECKEDOUT,null,BOOK
 At Swim-Two-Birds,Flann O'Brien,CHECKEDOUT,null,BOOK
 The Power and the Glory,Graham Greene,ONSHELF,null,BOOK
 For Whom the Bell Tolls,Ernest Hemingway,ONSHELF,null,BOOK
@@ -22,7 +22,7 @@ The Body,William Sansom,ONSHELF,null,BOOK
 Scenes from Provincial Life,William Cooper,CHECKEDOUT,null,BOOK
 The Disenchanted,Budd Schulberg,ONSHELF,null,BOOK
 A Dance to the Music of Time (to 1975),Anthony Powell,ONSHELF,null,BOOK
-The Catcher in the Rye,J. D. Salinger,CHECKEDOUT,Wed Jul 31 21:55:36 EDT 2019,BOOK
+The Catcher in the Rye,J. D. Salinger,CHECKEDOUT,null,BOOK
 The Chronicle of Ancient Sunlight (to 1969),Henry Williamson,ONSHELF,null,BOOK
 The Caine Mutiny,Herman Wouk,ONSHELF,null,BOOK
 Invisible Man,Ralph Ellison,ONSHELF,null,BOOK
@@ -96,7 +96,7 @@ Darconville's Cat,Alexander Theroux,ONSHELF,null,BOOK
 The Mosquito Coast,Paul Theroux,CHECKEDOUT,null,BOOK
 Creation,Gore Vidal,CHECKEDOUT,null,BOOK
 The Rebel Angels,Robertson Davies,CHECKEDOUT,null,BOOK
-Ancient Evenings,Norman Mailer,CHECKEDOUT,null,BOOK
+Ancient Evenings,Norman Mailer,CHECKEDOUT,Wed Jul 31 22:58:56 EDT 2019,BOOK
 It's a Wonderful Life (1946),null,ONSHELF,null,DVD
 To Kill a Mockingbird (1962),null,ONSHELF,null,DVD
 Schindler's List (1993),null,ONSHELF,null,DVD
